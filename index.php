@@ -18,7 +18,7 @@
     <section class="section-callout">
       <div class="row">
         <div class="small-12 columns">
-          <h2 class="text-center">Indienomicon Expo 2015</h2>
+          <h2 class="text-center">Indienomicon Expo 2014</h2>
         </div>
       </div>
 
