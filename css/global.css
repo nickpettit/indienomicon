@@ -13,6 +13,7 @@ h2 {
 }
 
 section, section.row {
+  margin-top: 4em;
   margin-bottom: 4em;
 }
 
