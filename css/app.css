@@ -1,0 +1,270 @@
+.hero {
+  min-height: 300px;
+  background: url('../img/home_hero.jpg') center center no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes scale-in {
+  0% {
+    -wekbit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    -wekbit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tagline {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 2em;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+  color: #FFF;
+  -webkit-animation: scale-in 400ms ease-out 100ms;
+  animation: scale-in 400ms ease-out 100ms;
+}
+
+.next-event {
+  text-align: center;
+  background: #FFF;
+  color: #000;
+  font-size: 1.4em;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
+  -webkit-animation: scale-in 400ms ease-out 300ms;
+  animation: scale-in 400ms ease-out 300ms;
+}
+
+.event-title {
+  display: block;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #000;
+  text-shadow: none;
+}
+
+.event-date {
+  display: block;
+}
+
+.event-btn {
+  display: block;
+  background: rgb(24, 154, 153);
+  color: #FFF;
+  margin: 0 10%;
+  box-shadow: none;
+  font-size: 1rem;
+}
+
+.event-btn:hover {
+  background: rgb(44, 174, 173);
+  color: #FFF;
+}
+
+.game.row.collapse {
+  margin-bottom: 1em;
+  background-color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
+}
+
+.game-title, .game-maker, .game-desc {
+  padding: 0 2rem;
+}
+
+.game-title {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+}
+
+.game-maker {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-image {
+  text-align: center;
+}
+
+.game-image img {
+  display: inline-block;
+  padding: 1em;
+}
+
+.section-callout {
+  background: rgb(24, 154, 153);
+  color: #FFF;
+  padding: 3em 0;
+}
+
+.section-callout h2,
+.section-callout h3 {
+  color: #FFF;
+}
+
+.section-callout input {
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  width: 100%;
+  margin-bottom: 1em;
+  color: #000;
+}
+
+.section-callout .btn {
+  color: #FFF;
+  background-color: rgb(3, 99, 143);
+}
+
+.section-callout .btn:hover {
+  background-color: rgb(23, 119, 163);
+}
+
+.section-callout a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.logo-grid a {
+  display: block;
+  width: 200px;
+  height: 168px;
+  text-indent: -2000px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+
+/*******************************
+RESPONSIVE STYLES
+********************************/
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  .hero {
+    min-height: 200px;
+  }
+
+  .tagline {
+    color: #FFF;
+    font-weight: normal;
+    font-size: 1.8em;
+    margin: 1rem;
+  }
+
+  .section-callout input {
+    width: auto;
+    margin: 0 0.5em 0 0;
+  }
+
+  .logo-grid a {
+    display: inline-block;
+    margin: 1em;
+  }
+
+}
+
+/* Large Screens (Laptops) */
+@media only screen and (min-width: 64.063em) {
+
+  .hero {
+    height: 400px;
+  }
+
+  .tagline {
+    margin: 4em 1em 0 0;
+    font-size: 2em;
+    background: none;
+    padding: 0;
+  }
+
+  .next-event {
+    text-align: left;
+    margin: 3em 0 0 0;
+  }
+
+  .event-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+  }
+
+  .event-loc {
+    display: block;
+    margin-bottom: 2.5em;
+  }
+
+  .event-date, .event-loc {
+    color: rgba(0,0,0,0.6);
+    padding-left: 4em;
+    margin-left: 1.6em;
+  }
+
+  .event-date strong, .event-loc strong {
+    font-size: 1.1em;
+    color: rgba(0,0,0,1);
+  }
+
+  .event-date {
+    background: url('../img/event-date.svg') left center no-repeat;
+    background-size: 45px;
+  }
+
+  .event-loc {
+    background: url('../img/event-loc.svg') left center no-repeat;
+    background-size: 40px;
+  }
+
+  .event-btn {
+    margin: 0 3em 0;
+  }
+
+  .game-image {
+    text-align: left;
+  }
+
+  .game-image img {
+    display: block;
+    padding: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .section-callout input {
+    padding: 1.2em;
+    font-size: 1.2em;
+  }
+
+  .section-callout .btn {
+    padding: 1.2em 3em;
+  }
+
+}

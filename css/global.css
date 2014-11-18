@@ -1,0 +1,48 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background: url('../img/shattered_@2X.png') fixed;
+  background-size: 500px;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6em;
+  color: rgba(0,0,0,0.75);
+  text-transform: uppercase;
+}
+
+section, section.row {
+  margin-bottom: 4em;
+}
+
+a {
+  color: rgb(3, 99, 143);
+}
+
+a:hover {
+  color: rgb(24, 154, 153);
+}
+
+
+/*******************************
+RESPONSIVE STYLES
+********************************/
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  h2 {
+    font-size: 2em;
+  }
+
+}
+
+/* Large Screens (Laptops) */
+@media only screen and (min-width: 64.063em) {
+
+  h2 {
+    font-size: 3em;
+  }
+
+}
