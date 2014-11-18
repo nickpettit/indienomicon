@@ -28,6 +28,7 @@
             <li><a href="games.php">Games</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
+            <li><a href="press.php">Press</a></li>
           </ul>
         </nav>
       </div>
