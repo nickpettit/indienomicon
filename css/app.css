@@ -1,5 +1,5 @@
 .hero {
-  min-height: 300px;
+  min-height: 350px;
   background: url('../img/home_hero.jpg') center center no-repeat;
   background-size: cover;
   margin-bottom: 0;
@@ -92,6 +92,11 @@
 
 .event-date {
   display: block;
+}
+
+.event-note {
+  color: rgba(0,0,0,0.7);
+  text-align: center;
 }
 
 .event-btn {
@@ -222,7 +227,7 @@ RESPONSIVE STYLES
 @media only screen and (min-width: 64.063em) {
 
   .hero {
-    height: 400px;
+    height: 480px;
   }
 
   .tagline {

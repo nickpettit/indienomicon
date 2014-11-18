@@ -15,6 +15,7 @@
             <h2 class="event-title">Indienomicon Expo</h2>
             <p class="event-date"><strong>Saturday, December 6th</strong><br>12:00pm - 5:00pm</p>
             <p class="event-loc"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</p>
+            <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
           </div>
         </div>
       </div>
