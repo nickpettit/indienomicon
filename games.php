@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<?php include 'nav.php'; ?>
 
     <section class="row">
       <div class="small-12 columns">

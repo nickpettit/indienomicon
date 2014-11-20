@@ -4,6 +4,8 @@
   background-size: cover;
   margin-bottom: 0;
   margin-top: 0;
+  color: #FFF;
+  padding: 1em 0 3em 0;
 }
 
 @-webkit-keyframes scale-in {
@@ -37,16 +39,6 @@
   }
 }
 
-.tagline {
-  font-size: 1.25em;
-  font-weight: bold;
-  margin: 2em;
-  text-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-  color: #FFF;
-  -webkit-animation: scale-in 400ms ease-out 100ms;
-  animation: scale-in 400ms ease-out 100ms;
-}
-
 .social {
   text-align: center;
 }
@@ -69,14 +61,7 @@
 .youtube { background-image: url('../img/youtube.png'); }
 
 .next-event {
-  text-align: center;
-  background: #FFF;
   color: #000;
-  font-size: 1.4em;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 4px;
-  box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
   -webkit-animation: scale-in 400ms ease-out 300ms;
   animation: scale-in 400ms ease-out 300ms;
 }
@@ -90,13 +75,9 @@
   text-shadow: none;
 }
 
-.event-date {
-  display: block;
-}
-
 .event-note {
-  color: rgba(0,0,0,0.7);
   text-align: center;
+  margin: 0;
 }
 
 .event-btn {
@@ -196,13 +177,6 @@ RESPONSIVE STYLES
     min-height: 200px;
   }
 
-  .tagline {
-    color: #FFF;
-    font-weight: normal;
-    font-size: 1.8em;
-    margin: 1rem;
-  }
-
   .social {
     text-align: left;
   }
@@ -227,19 +201,7 @@ RESPONSIVE STYLES
 @media only screen and (min-width: 64.063em) {
 
   .hero {
-    height: 480px;
-  }
-
-  .tagline {
-    margin: 1.8em 1em 0 0;
-    font-size: 2em;
-    background: none;
-    padding: 0;
-  }
-
-  .next-event {
-    text-align: left;
-    margin: 3em 0 0 0;
+    min-height: 480px;
   }
 
   .event-title {
@@ -248,20 +210,14 @@ RESPONSIVE STYLES
     margin-bottom: 0.8em;
   }
 
-  .event-loc {
-    display: block;
-    margin-bottom: 2.5em;
-  }
-
   .event-date, .event-loc {
-    color: rgba(0,0,0,0.6);
     padding-left: 4em;
     margin-left: 1.6em;
+    color: #000;
   }
 
   .event-date strong, .event-loc strong {
     font-size: 1.1em;
-    color: rgba(0,0,0,1);
   }
 
   .event-date {
@@ -270,7 +226,7 @@ RESPONSIVE STYLES
   }
 
   .event-loc {
-    background: url('../img/event-loc.svg') left center no-repeat;
+    background: url('../img/event-loc.svg') left 8px no-repeat;
     background-size: 40px;
   }
 
@@ -280,10 +236,6 @@ RESPONSIVE STYLES
 
   .social {
     margin: 1em 0 0 0;
-  }
-
-  .social li {
-
   }
 
   .game-image {

@@ -1,11 +1,13 @@
 header {
   background: #FFF;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo {
   color: #000;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.7em;
+  font-size: 0.65em;
   text-transform: uppercase;
   font-weight: bold;
   margin: 5px auto 0px auto;
@@ -22,7 +24,7 @@ header {
 }
 
 .logo img {
-  max-width: 20px;
+  max-width: 25px;
   -webkit-transition: -webkit-transform 100ms ease-out;
   transition: transform 100ms ease-out;
   margin-right: 5px;
@@ -65,7 +67,7 @@ RESPONSIVE STYLES
   }
 
   .logo img {
-    max-width: 45px;
+    max-width: 35px;
   }
 
   nav ul {
@@ -83,11 +85,7 @@ RESPONSIVE STYLES
 
   .logo {
     margin-left: 0;
-    font-size: 3rem;
-  }
-
-  .logo img {
-    max-width: 55px;
+    font-size: 2rem;
   }
 
   .logo:hover img {
@@ -96,7 +94,7 @@ RESPONSIVE STYLES
   }
 
   nav a {
-    padding: 32px 0.6em;
+    padding: 1em 0.6em;
     font-size: 1.2em;
   }
 

@@ -1,0 +1,129 @@
+.expo-header {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 auto;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+  color: #FFF;
+  -webkit-animation: scale-in 400ms ease-out 100ms;
+  animation: scale-in 400ms ease-out 100ms;
+  text-align: center;
+}
+
+.expo-description {
+  font-size: 1.5em;
+}
+
+.expo-features:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.expo-box {
+  width: 100%;
+  min-height: 100px;
+  float: left;
+  color: #FFF;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.expo-box:hover {
+  color: #FFF;
+  box-shadow: none;
+}
+
+.expo-box:last-child {
+  float: right;
+}
+
+.expo-box h3 {
+  color: #FFF;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+.exhibitors { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.25),
+    rgba(0,0,0, 0.75)
+  ), url('../img/home_hero.jpg'); }
+
+.exhibitors:hover { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/home_hero.jpg'); }
+
+.breakouts { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.25),
+    rgba(0,0,0, 0.75)
+  ), url('../img/home_hero.jpg'); }
+
+.breakouts:hover { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/home_hero.jpg'); }
+
+.cosplay { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.25),
+    rgba(0,0,0, 0.75)
+  ), url('../img/home_hero.jpg'); }
+
+.cosplay:hover { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/home_hero.jpg'); }
+
+.giveaways { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.25),
+    rgba(0,0,0, 0.75)
+  ), url('../img/home_hero.jpg'); }
+
+.giveaways:hover { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/home_hero.jpg'); }
+
+/*******************************
+RESPONSIVE STYLES
+********************************/
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  .expo-header {
+    color: #FFF;
+    margin: 1rem auto;
+  }
+
+  .expo-box {
+    width: 50%;
+    min-height: 200px;
+  }
+
+}
+
+/* Large Screens (Laptops) */
+@media only screen and (min-width: 64.063em) {
+
+  .expo-header {
+    margin: 0.5em auto;
+    font-size: 4.6em;
+    background: none;
+    padding: 0;
+  }
+
+  .expo-box {
+    width: 25%;
+  }
+
+}
