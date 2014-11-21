@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-    <section class="hero">
+    <section class="expo-hero">
       <div class="row collapse">
         <div class="small-12 columns">
           <h2 class="expo-header">Indienomicon Expo 2014</h2>

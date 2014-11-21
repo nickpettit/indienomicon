@@ -1,3 +1,13 @@
+.expo-hero {
+  min-height: 350px;
+  background: url('../img/expo/trianglify-background5.svg') center center no-repeat;
+  background-size: cover;
+  color: #FFF;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 1em 0 3em 0;
+}
+
 .expo-header {
   font-size: 3em;
   font-weight: bold;
@@ -20,8 +30,8 @@
 }
 
 .expo-box {
-  width: 100%;
-  min-height: 100px;
+  width: 50%;
+  min-height: 200px;
   float: left;
   color: #FFF;
   background-position: center center;
@@ -49,49 +59,50 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.9);
 }
 
 
 .exhibitors { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.25),
-    rgba(0,0,0, 0.75)
-  ), url('../img/home_hero.jpg'); }
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/expo/exhibitors.jpg'); }
 
 .exhibitors:hover { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.15),
-    rgba(24, 154, 153, 0.15)
-  ), url('../img/home_hero.jpg'); }
+    rgba(24, 154, 153, 0.25),
+    rgba(24, 154, 153, 0.25)
+  ), url('../img/expo/exhibitors.jpg'); }
 
 .breakouts { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.25),
-    rgba(0,0,0, 0.75)
-  ), url('../img/home_hero.jpg'); }
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/expo/breakouts.jpg'); }
 
 .breakouts:hover { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.15),
-    rgba(24, 154, 153, 0.15)
-  ), url('../img/home_hero.jpg'); }
+    rgba(24, 154, 153, 0.25),
+    rgba(24, 154, 153, 0.25)
+  ), url('../img/expo/breakouts.jpg'); }
 
 .cosplay { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.25),
-    rgba(0,0,0, 0.75)
-  ), url('../img/home_hero.jpg'); }
+    rgba(24, 154, 153, 0.15),
+    rgba(24, 154, 153, 0.15)
+  ), url('../img/expo/cosplay.jpg'); }
 
 .cosplay:hover { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.15),
-    rgba(24, 154, 153, 0.15)
-  ), url('../img/home_hero.jpg'); }
+    rgba(24, 154, 153, 0.25),
+    rgba(24, 154, 153, 0.25)
+  ), url('../img/expo/cosplay.jpg'); }
 
 .giveaways { background-image: linear-gradient(
-    rgba(24, 154, 153, 0.25),
-    rgba(0,0,0, 0.75)
-  ), url('../img/home_hero.jpg'); }
-
-.giveaways:hover { background-image: linear-gradient(
     rgba(24, 154, 153, 0.15),
     rgba(24, 154, 153, 0.15)
-  ), url('../img/home_hero.jpg'); }
+  ), url('../img/expo/giveaways.jpg'); }
+
+.giveaways:hover { background-image: linear-gradient(
+    rgba(24, 154, 153, 0.25),
+    rgba(24, 154, 153, 0.25)
+  ), url('../img/expo/giveaways.jpg'); }
 
 /*******************************
 RESPONSIVE STYLES
@@ -105,15 +116,19 @@ RESPONSIVE STYLES
     margin: 1rem auto;
   }
 
-  .expo-box {
-    width: 50%;
-    min-height: 200px;
+  .expo-box h3 {
+    font-size: 2em;
   }
 
 }
 
 /* Large Screens (Laptops) */
 @media only screen and (min-width: 64.063em) {
+
+  .expo-hero {
+    padding: 1em 0 3em 0;
+    min-height: 480px;
+  }
 
   .expo-header {
     margin: 0.5em auto;
