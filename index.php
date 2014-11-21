@@ -46,11 +46,17 @@
     <section class="row">
       <div class="small-12 columns">
         <h2 id="featured-exhibitors">Featured Exhibitors</h2>
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4 logo-grid">
-          <li><a href="http://www.theindiebox.com/" style="background-image: url('img/sponsors/indiebox.png');">The Indie Box</a></li>
-          <li><a href="http://www.terncraftgames.com/" style="background-image: url('img/sponsors/terncraft.png');">Terncraft Games</a></li>
-          <li><a href="http://phykenmedia.com/" style="background-image: url('img/sponsors/phyken.png');">Phyken Media</a></li>
-          <li><a href="http://kaleidoscopeit.com/" style="background-image: url('img/sponsors/kaleidoscope.png');">Kaleidoscope Media</a></li>
+        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-5 logo-grid">
+          <li><a href="http://phykenmedia.com/" style="background-image: url('img/expo/exhibitors/phykenmedia.png');">Phyken Media</a></li>
+          <li><a href="http://www.terncraftgames.com/" style="background-image: url('img/expo/exhibitors/terncraft.png');">Terncraft Games</a></li>
+          <li><a href="http://outhousegames.org/" style="background-image: url('img/expo/exhibitors/outhousegames.png');">Outhouse Games</a></li>
+          <li><a href="http://crazyrockcreative.com/omega-hero/" style="background-image: url('img/expo/exhibitors/omegahero.png');">Omega Hero</a></li>
+          <li><a href="#" style="background-image: url('img/expo/exhibitors/smashgames.png');">Smash Games</a></li>
+          <li><a href="http://www.periareion.com/#!tba-games/c5hv" style="background-image: url('img/expo/exhibitors/tbagames.png');">TBA Games</a></li>
+          <li><a href="http://www.gentlemansquidstudio.com/" style="background-image: url('img/expo/exhibitors/gentlemensquid.png');">Gentlemen Squid Studio</a></li>
+          <li><a href="http://dropsytheclown.com/" style="background-image: url('img/expo/exhibitors/tendershoot.png');">Tendershoot</a></li>
+          <li><a href="http://hapagames.com/" style="background-image: url('img/expo/exhibitors/hapagames.png');">Hapa Games</a></li>
+          <li><a href="http://www.thatwhichismedia.com/" style="background-image: url('img/expo/exhibitors/thatwhichismedia.png');">ThatWhichIsMedia</a></li>
         <ul>
       </div>
     </section>
@@ -58,10 +64,19 @@
     <section class="row">
       <div class="small-12 columns">
         <h2 id="breakout-sessions">Breakout Sessions</h2>
-        <h3>Indie Origins Panel</h3>
-        <p>Hear the origin stories of how local Orlando game development studios began! Stay tuned for times and details.</p>
-        <h3>Game Development Workshop</h3>
-        <p>Learn real tips from a game developer! Stay tuned for times and details.</p>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <h3><strong>Play Without Pixels: Paper Prototyping for Game Development</strong></h3>
+            <h4>12:30pm - 2:30pm</h4>
+            <p>Prototyping materials will be provided, and all ages and skill levels are welcome to join in the fun!</p>
+            <p>In this workshop, Steve Emberton will introduce participants to the MDA Framework for game design and guide them through applying those principles to creating a paper prototype of a game.  (Psst, MDA stands for Mechanics-Dynamics-Aesthetics).</p>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <h3><strong>Indie Origins Panel Discussion</strong></h3>
+            <h4>2:30pm</h4>
+            <p>Hear the origin stories of how a local Orlando game development studio began! Stay tuned for times and details.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -75,7 +90,7 @@
     <section class="row">
       <div class="small-12 columns">
         <h2 id="giveaways-and-merchandise">Giveaways and Merchandise</h2>
-        <p>Come and get awesome stuff!</p>
+        <p>T-shirts and stickers and buttons and other goodies oh my! We will have plenty of cool things to win or buy. Best of all of it goes toward supporting our industry and helping to keep most of our events free.</p>
       </div>
     </section>
 

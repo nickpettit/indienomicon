@@ -158,10 +158,12 @@
 
 .logo-grid a {
   display: block;
-  width: 200px;
-  height: 168px;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
   text-indent: -2000px;
   background-repeat: no-repeat;
+  background-position: center center;
   margin: 0 auto;
 }
 
