@@ -5,6 +5,14 @@
         <div class="small-12 columns">
           <h2 class="expo-header">Indienomicon Expo 2014</h2>
           <div class="row">
+            <div class="small-12 medium-5 columns">
+              <div class="next-event content-block">
+                <p class="event-date"><strong>Saturday, December 6th</strong><br>12:00pm - 5:00pm</p>
+                <p class="event-loc"><a href="https://www.google.com/maps/place/Melrose+Center+(Inside+of+Orlando+Public+Library)/@28.542464,-81.377149,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77afc378b4f97:0x88eb726c5efaecd4" title="View on Google Maps" target="new"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</a></p>
+                <a href="https://www.facebook.com/events/783183325098945/" class="btn event-btn">Join in!</a>
+              </div>
+              <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
+            </div>
             <div class="small-12 medium-7 columns">
               <p class="expo-description">The Indienomicon Expo showcases independent games made in Central Florida. This event is free and open to the public! Play indie games, talk to game developers, and make new friends.</p>
               <ul class="social">
@@ -15,20 +23,13 @@
               <div class="expo-sponsors">
                 <h3>Sponsored By</h3>
                 <ul class="small-block-grid-3">
+                  <li><a href="http://tic.ocls.info/"><img src="img/expo/sponsors/sponsor_melrosecenter.png" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
                   <li><a href="http://gamesartandmusic.com/"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
                   <li><a href="https://factur.org/"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
-                  <li><a href="http://tic.ocls.info/"><img src="img/expo/sponsors/sponsor_melrosecenter.png" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
                 <ul>
               </div>
             </div>
-            <div class="small-12 medium-5 columns">
-              <div class="next-event content-block">
-                <p class="event-date"><strong>Saturday, December 6th</strong><br>12:00pm - 5:00pm</p>
-                <p class="event-loc"><a href="https://www.google.com/maps/place/Melrose+Center+(Inside+of+Orlando+Public+Library)/@28.542464,-81.377149,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77afc378b4f97:0x88eb726c5efaecd4" title="View on Google Maps" target="new"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</a></p>
-                <a href="https://www.facebook.com/events/783183325098945/" class="btn event-btn">Join in!</a>
-              </div>
-              <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
-            </div>
+
           </div>
 
         </div>
