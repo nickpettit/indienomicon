@@ -12,11 +12,20 @@
                 <li class="twitter"><a href="http://www.twitter.com/indienomicon" target="new">Twitter</a></li>
                 <li class="youtube"><a href="https://www.youtube.com/user/IndieNomicon" target="new">YouTube</a></li>
               </ul>
+              <div class="expo-sponsors">
+                <h3>Sponsored By</h3>
+                <ul class="small-block-grid-3 logo-grid">
+                  <li><a href="http://gamesartandmusic.com/"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
+                  <li><a href="https://factur.org/"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
+                  <li><a href="http://tic.ocls.info/"><img src="img/expo/sponsors/sponsor_melrosecenter.png" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
+                <ul>
+              </div>
             </div>
             <div class="small-12 medium-5 columns">
               <div class="next-event content-block">
                 <p class="event-date"><strong>Saturday, December 6th</strong><br>12:00pm - 5:00pm</p>
                 <p class="event-loc"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</p>
+                <a href="https://www.facebook.com/events/783183325098945/" class="btn event-btn">Join in!</a>
               </div>
               <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
             </div>
@@ -27,8 +36,8 @@
     </section>
 
     <section class="expo-features">
-      <a class="expo-box exhibitors" href="#featured-exhibitors">
-        <h3>Exhibitors</h3>
+      <a class="expo-box games" href="#featured-games">
+        <h3>Games</h3>
       </a>
       <a class="expo-box breakouts" href="#breakout-sessions">
         <h3>Breakouts</h3>
@@ -45,18 +54,27 @@
 
     <section class="row">
       <div class="small-12 columns">
-        <h2 id="featured-exhibitors">Featured Exhibitors</h2>
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-5 logo-grid">
-          <li><a href="http://phykenmedia.com/" style="background-image: url('img/expo/exhibitors/phykenmedia.png');">Phyken Media</a></li>
-          <li><a href="http://www.terncraftgames.com/" style="background-image: url('img/expo/exhibitors/terncraft.png');">Terncraft Games</a></li>
-          <li><a href="http://outhousegames.org/" style="background-image: url('img/expo/exhibitors/outhousegames.png');">Outhouse Games</a></li>
-          <li><a href="http://crazyrockcreative.com/omega-hero/" style="background-image: url('img/expo/exhibitors/omegahero.png');">Omega Hero</a></li>
-          <li><a href="#" style="background-image: url('img/expo/exhibitors/smashgames.png');">Smash Games</a></li>
-          <li><a href="http://www.periareion.com/#!tba-games/c5hv" style="background-image: url('img/expo/exhibitors/tbagames.png');">TBA Games</a></li>
-          <li><a href="http://www.gentlemansquidstudio.com/" style="background-image: url('img/expo/exhibitors/gentlemensquid.png');">Gentlemen Squid Studio</a></li>
-          <li><a href="http://dropsytheclown.com/" style="background-image: url('img/expo/exhibitors/tendershoot.png');">Tendershoot</a></li>
-          <li><a href="http://hapagames.com/" style="background-image: url('img/expo/exhibitors/hapagames.png');">Hapa Games</a></li>
-          <li><a href="http://www.thatwhichismedia.com/" style="background-image: url('img/expo/exhibitors/thatwhichismedia.png');">ThatWhichIsMedia</a></li>
+        <h2 id="featured-games">Featured Games and Studios</h2>
+        <p>Play indie games and meet their creators! Even more studios and games are coming, so stay tuned.</p>
+        <ul class="small-block-grid-3 medium-block-grid-5 large-block-grid-6 logo-grid">
+          <li><a href="http://phykenmedia.com/"><img src="img/expo/exhibitors/studio_phykenmedia.png" alt="Phyken Media"></a></li>
+          <li><a href="http://www.terncraftgames.com/"><img src="img/expo/exhibitors/studio_terncraft.png" alt="Terncraft Games"></a></li>
+          <li><a href="http://www.periareion.com/#!tba-games/c5hv"><img src="img/expo/exhibitors/studio_tbagames.png" alt="TBA Games"></a></li>
+          <li><a href="http://www.periareion.com/"><img src="img/expo/exhibitors/game_periareion.png" alt="Periareion"></a></li>
+          <li><a href="http://www.cellecgames.com/"><img src="img/expo/exhibitors/studio_cellecgames.png" alt="Cellec Games"></a></li>
+          <li><a href="https://www.facebook.com/SuperKawaiiTurtleFighter"><img src="img/expo/exhibitors/game_superkawaiiturtlefighter.png" alt="Super Kawaii Turtle Fighter"></a></li>
+          <li><a href="http://dropsytheclown.com/"><img src="img/expo/exhibitors/studio_tendershoot.png" alt="Tendershoot"></a></li>
+          <li><a href="http://dropsytheclown.com/"><img src="img/expo/exhibitors/game_dropsy.png" alt="Dropsy"></a></li>
+          <li><a href="https://www.facebook.com/magicitegame"><img src="img/expo/exhibitors/studio_smashgames.png" alt="Smash Games"></a></li>
+          <li><a href="https://www.facebook.com/magicitegame"><img src="img/expo/exhibitors/game_magicite.png" alt="Magicite"></a></li>
+          <li><a href="http://hapagames.com/"><img src="img/expo/exhibitors/studio_hapagames.png" alt="Hapa Games"></a></li>
+          <li><a href="http://hapagames.com/"><img src="img/expo/exhibitors/game_ascendant.png" alt="Ascendant"></a></li>
+          <li><a href="http://www.thatwhichismedia.com/"><img src="img/expo/exhibitors/studio_thatwhichismedia.png" alt="ThatWhichIsMedia"></a></li>
+          <li><a href="http://crazyrockcreative.com/omega-hero/"><img src="img/expo/exhibitors/game_omegahero.png" alt="Omega Hero"></a></li>
+          <li><a href="http://www.burnoutgameventures.com/"><img src="img/expo/exhibitors/studio_burnoutgameventures.png" alt="Burnout Game Ventures"></a></li>
+          <li><a href="http://threedeadzed.com/"><img src="img/expo/exhibitors/game_3deadzed.png" alt="Three Dead Zed"></a></li>
+          <li><a href="http://www.riseoftheravager.com/"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
+          <li><a href="http://www.gentlemansquidstudio.com/"><img src="img/expo/exhibitors/studio_gentlemensquid.png" alt="Gentlemen Squid Studio"></a></li>
         <ul>
       </div>
     </section>
@@ -83,7 +101,8 @@
     <section class="row">
       <div class="small-12 columns">
         <h2 id="cosplay-contest">Cosplay Contest</h2>
-        <p>Come as your favorite video game character and compete for the grand prize in the first Indienomicon Cosplay Contest!</p>
+        <h4>Winners Announced at 4:00pm</h4>
+        <p>Come as your favorite video game character and compete for the grand prize in the first Indienomicon Cosplay Contest! Winners will be announced at 4:00pm. To be eligible for entry, you must <strong>register by 3:00pm</strong></p>
       </div>
     </section>
 

@@ -156,16 +156,7 @@
   text-decoration: underline;
 }
 
-.logo-grid a {
-  display: block;
-  width: 150px;
-  height: 150px;
-  background-size: contain;
-  text-indent: -2000px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin: 0 auto;
-}
+
 
 
 /*******************************
