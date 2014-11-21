@@ -183,11 +183,6 @@ RESPONSIVE STYLES
     margin: 0 0.5em 0 0;
   }
 
-  .logo-grid a {
-    display: inline-block;
-    margin: 1em;
-  }
-
 }
 
 /* Large Screens (Laptops) */
@@ -201,6 +196,10 @@ RESPONSIVE STYLES
     font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 0.8em;
+  }
+
+  .event-loc a {
+    color: #000;
   }
 
   .event-date, .event-loc {
