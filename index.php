@@ -104,6 +104,7 @@
           <h2 id="cosplay-contest">Cosplay Contest</h2>
           <h4>Winners Announced at 4:00pm</h4>
           <p>Come as your favorite video game character and compete for the grand prize in the first Indienomicon Cosplay Contest! Winners will be announced at 4:00pm. To be eligible for entry, you must <strong>register by 3:00pm</strong></p>
+          <p class="image-credit"><a href="https://www.flickr.com/photos/cosplaytango/15285153390">(image credit)</a></p>
         </div>
       </div>
     </section>

@@ -133,6 +133,12 @@
   color: #FFF;
 }
 
+.cosplay-hero .image-credit a {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
 /*******************************
 RESPONSIVE STYLES
 ********************************/
