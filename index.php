@@ -93,7 +93,7 @@
           <div class="small-12 medium-6 columns">
             <h3><strong>Indie Origins Panel Discussion</strong></h3>
             <h4>2:30pm</h4>
-            <p>Hear the origin stories of how a local Orlando game development studio began! Stay tuned for times and details.</p>
+            <p>Hear the origin story of how a local Orlando game development studio began! You won't want to miss this special panel discussion from real game developers.</p>
           </div>
         </div>
       </div>
