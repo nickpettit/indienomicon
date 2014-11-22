@@ -3,7 +3,7 @@
     <section class="expo-hero">
       <div class="row collapse">
         <div class="small-12 columns">
-          <h2 class="expo-header">Indienomicon Expo 2014</h2>
+          <h2 class="expo-header"><img src="img/indienomicon-logo.svg"> Indienomicon Expo 2014</h2>
           <div class="row">
             <div class="small-12 medium-5 columns">
               <div class="next-event content-block">
@@ -55,9 +55,9 @@
 
     <section class="row">
       <div class="small-12 columns">
-        <h2 id="featured-exhibitors">Featured Games and Studios</h2>
+        <h2 id="featured-exhibitors">Featured Games, Studios, &amp; Exhibitors</h2>
         <p>Play indie games and meet their creators! Even more studios and games are coming, so stay tuned.</p>
-        <ul class="small-block-grid-3 medium-block-grid-5 large-block-grid-6">
+        <ul class="small-block-grid-3 medium-block-grid-6 large-block-grid-7">
           <li><a href="http://phykenmedia.com/" target="new"><img src="img/expo/exhibitors/studio_phykenmedia.png" alt="Phyken Media"></a></li>
           <li><a href="http://www.terncraftgames.com/" target="new"><img src="img/expo/exhibitors/studio_terncraft.png" alt="Terncraft Games"></a></li>
           <li><a href="http://www.periareion.com/#!tba-games/c5hv" target="new"><img src="img/expo/exhibitors/studio_tbagames.png" alt="TBA Games"></a></li>
@@ -76,6 +76,8 @@
           <li><a href="http://www.gentlemansquidstudio.com/" target="new"><img src="img/expo/exhibitors/studio_gentlemensquid.png" alt="Gentlemen Squid Studio"></a></li>
           <li><a href="http://threedeadzed.com/" target="new"><img src="img/expo/exhibitors/game_3deadzed.png" alt="Three Dead Zed"></a></li>
           <li><a href="http://www.riseoftheravager.com/" target="new"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
+          <li><a href="http://www.heroic-stand.com/" target="new"><img src="img/expo/exhibitors/studio_heroicstand.png" alt="Heroic Stand"></a></li>
+          <li><a href="http://www.templetapgame.com/" target="new"><img src="img/expo/exhibitors/game_templetap.png" alt="Temple Tap"></a></li>
           <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/exhibitors/company_indiebox.png" alt="Indiebox"></a></li>
         <ul>
       </div>
