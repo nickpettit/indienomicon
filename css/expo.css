@@ -168,7 +168,7 @@ RESPONSIVE STYLES
   }
 }
 
-/* Largest Screens (Desktops) */
+/* Huge Screens (Desktops) */
 @media only screen and (min-width: 64.063em) {
 
   .expo-hero {
@@ -185,6 +185,20 @@ RESPONSIVE STYLES
 
   .expo-box {
     width: 25%;
+  }
+
+}
+
+/* Epic Screens (Large Desktops) */
+@media only screen and (min-width: 100em) {
+
+  .expo-hero {
+    padding: 3em 0 6em 0;
+    min-height: 480px;
+  }
+
+  .expo-header {
+    margin: 1em auto;
   }
 
 }
