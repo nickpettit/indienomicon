@@ -114,6 +114,7 @@
 .cosplay-hero h4,
 .cosplay-hero p {
   color: #FFF;
+  text-shadow: 0px 0px 10px rgba(0,0,0,1);
 }
 
 .cosplay-hero .image-credit a {

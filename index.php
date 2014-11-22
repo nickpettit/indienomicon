@@ -14,7 +14,7 @@
               <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
             </div>
             <div class="small-12 medium-7 columns">
-              <p class="expo-description">The Indienomicon Expo showcases independent games made in Central Florida. This event is free and open to the public! Play indie games, talk to game developers, and make new friends.</p>
+              <p class="expo-description">Join us for an amazing festival showcasing independent games made in Central Florida. This event is free and open to the public! Play indie games, talk to game developers, have fun and make new friends.</p>
               <ul class="social">
                 <li class="facebook"><a href="http://www.facebook.com/indienomicon" target="new">Facebook</a></li>
                 <li class="twitter"><a href="http://www.twitter.com/indienomicon" target="new">Twitter</a></li>
@@ -23,9 +23,9 @@
               <div class="expo-sponsors">
                 <h3>Sponsored By</h3>
                 <ul class="small-block-grid-3">
-                  <li><a href="http://tic.ocls.info/"><img src="img/expo/sponsors/sponsor_melrosecenter.png" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
-                  <li><a href="http://gamesartandmusic.com/"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
-                  <li><a href="https://factur.org/"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
+                  <li><a href="http://tic.ocls.info/" target="new"><img src="img/expo/sponsors/sponsor_melrosecenter.png" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
+                  <li><a href="http://gamesartandmusic.com/" target="new"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
+                  <li><a href="https://factur.org/" target="new"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
                 <ul>
               </div>
             </div>
@@ -58,24 +58,25 @@
         <h2 id="featured-exhibitors">Featured Games and Studios</h2>
         <p>Play indie games and meet their creators! Even more studios and games are coming, so stay tuned.</p>
         <ul class="small-block-grid-3 medium-block-grid-5 large-block-grid-6">
-          <li><a href="http://phykenmedia.com/"><img src="img/expo/exhibitors/studio_phykenmedia.png" alt="Phyken Media"></a></li>
-          <li><a href="http://www.terncraftgames.com/"><img src="img/expo/exhibitors/studio_terncraft.png" alt="Terncraft Games"></a></li>
-          <li><a href="http://www.periareion.com/#!tba-games/c5hv"><img src="img/expo/exhibitors/studio_tbagames.png" alt="TBA Games"></a></li>
-          <li><a href="http://www.periareion.com/"><img src="img/expo/exhibitors/game_periareion.png" alt="Periareion"></a></li>
-          <li><a href="http://www.cellecgames.com/"><img src="img/expo/exhibitors/studio_cellecgames.png" alt="Cellec Games"></a></li>
-          <li><a href="https://www.facebook.com/SuperKawaiiTurtleFighter"><img src="img/expo/exhibitors/game_superkawaiiturtlefighter.png" alt="Super Kawaii Turtle Fighter"></a></li>
-          <li><a href="http://dropsytheclown.com/"><img src="img/expo/exhibitors/studio_tendershoot.png" alt="Tendershoot"></a></li>
-          <li><a href="http://dropsytheclown.com/"><img src="img/expo/exhibitors/game_dropsy.png" alt="Dropsy"></a></li>
-          <li><a href="https://www.facebook.com/magicitegame"><img src="img/expo/exhibitors/studio_smashgames.png" alt="Smash Games"></a></li>
-          <li><a href="https://www.facebook.com/magicitegame"><img src="img/expo/exhibitors/game_magicite.png" alt="Magicite"></a></li>
-          <li><a href="http://hapagames.com/"><img src="img/expo/exhibitors/studio_hapagames.png" alt="Hapa Games"></a></li>
-          <li><a href="http://hapagames.com/"><img src="img/expo/exhibitors/game_ascendant.png" alt="Ascendant"></a></li>
-          <li><a href="http://www.thatwhichismedia.com/"><img src="img/expo/exhibitors/studio_thatwhichismedia.png" alt="ThatWhichIsMedia"></a></li>
-          <li><a href="http://crazyrockcreative.com/omega-hero/"><img src="img/expo/exhibitors/game_omegahero.png" alt="Omega Hero"></a></li>
-          <li><a href="http://www.burnoutgameventures.com/"><img src="img/expo/exhibitors/studio_burnoutgameventures.png" alt="Burnout Game Ventures"></a></li>
-          <li><a href="http://threedeadzed.com/"><img src="img/expo/exhibitors/game_3deadzed.png" alt="Three Dead Zed"></a></li>
-          <li><a href="http://www.riseoftheravager.com/"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
-          <li><a href="http://www.gentlemansquidstudio.com/"><img src="img/expo/exhibitors/studio_gentlemensquid.png" alt="Gentlemen Squid Studio"></a></li>
+          <li><a href="http://phykenmedia.com/" target="new"><img src="img/expo/exhibitors/studio_phykenmedia.png" alt="Phyken Media"></a></li>
+          <li><a href="http://www.terncraftgames.com/" target="new"><img src="img/expo/exhibitors/studio_terncraft.png" alt="Terncraft Games"></a></li>
+          <li><a href="http://www.periareion.com/#!tba-games/c5hv" target="new"><img src="img/expo/exhibitors/studio_tbagames.png" alt="TBA Games"></a></li>
+          <li><a href="http://www.periareion.com/" target="new"><img src="img/expo/exhibitors/game_periareion.png" alt="Periareion"></a></li>
+          <li><a href="http://www.cellecgames.com/" target="new"><img src="img/expo/exhibitors/studio_cellecgames.png" alt="Cellec Games"></a></li>
+          <li><a href="https://www.facebook.com/SuperKawaiiTurtleFighter" target="new"><img src="img/expo/exhibitors/game_superkawaiiturtlefighter.png" alt="Super Kawaii Turtle Fighter"></a></li>
+          <li><a href="http://dropsytheclown.com/" target="new"><img src="img/expo/exhibitors/studio_tendershoot.png" alt="Tendershoot"></a></li>
+          <li><a href="http://dropsytheclown.com/" target="new"><img src="img/expo/exhibitors/game_dropsy.png" alt="Dropsy"></a></li>
+          <li><a href="https://www.facebook.com/magicitegame" target="new"><img src="img/expo/exhibitors/studio_smashgames.png" alt="Smash Games"></a></li>
+          <li><a href="https://www.facebook.com/magicitegame" target="new"><img src="img/expo/exhibitors/game_magicite.png" alt="Magicite"></a></li>
+          <li><a href="http://hapagames.com/" target="new"><img src="img/expo/exhibitors/studio_hapagames.png" alt="Hapa Games"></a></li>
+          <li><a href="http://hapagames.com/" target="new"><img src="img/expo/exhibitors/game_ascendant.png" alt="Ascendant"></a></li>
+          <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/studio_thatwhichismedia.png" alt="ThatWhichIsMedia"></a></li>
+          <li><a href="http://crazyrockcreative.com/omega-hero/" target="new"><img src="img/expo/exhibitors/game_omegahero.png" alt="Omega Hero"></a></li>
+          <li><a href="http://www.burnoutgameventures.com/" target="new"><img src="img/expo/exhibitors/studio_burnoutgameventures.png" alt="Burnout Game Ventures"></a></li>
+          <li><a href="http://www.gentlemansquidstudio.com/" target="new"><img src="img/expo/exhibitors/studio_gentlemensquid.png" alt="Gentlemen Squid Studio"></a></li>
+          <li><a href="http://threedeadzed.com/" target="new"><img src="img/expo/exhibitors/game_3deadzed.png" alt="Three Dead Zed"></a></li>
+          <li><a href="http://www.riseoftheravager.com/" target="new"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
+          <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/exhibitors/company_indiebox.png" alt="Indiebox"></a></li>
         <ul>
       </div>
     </section>
@@ -93,7 +94,7 @@
           <div class="small-12 medium-6 columns">
             <h3><strong>Indie Origins Panel Discussion</strong></h3>
             <h4>2:30pm</h4>
-            <p>Hear the origin story of how a local Orlando game development studio began! You won't want to miss this special panel discussion from real game developers.</p>
+            <p>Hear the amazing, deep, dark, twisted and death defying origin stories of how several of our humble Orlando indie game studios began! ...Ok fine perhaps that’s being a bit over dramatic, but listen, starting a games studio isn’t easy! It takes a lot of effort and resources to do to start a studio and these are their stories.</p>
           </div>
         </div>
       </div>
