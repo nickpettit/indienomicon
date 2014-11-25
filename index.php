@@ -9,7 +9,7 @@
               <div class="next-event content-block">
                 <p class="event-date"><strong>Saturday, December 6th</strong><br>12:00pm - 5:00pm</p>
                 <p class="event-loc"><a href="https://www.google.com/maps/place/Melrose+Center+(Inside+of+Orlando+Public+Library)/@28.542464,-81.377149,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77afc378b4f97:0x88eb726c5efaecd4" title="View on Google Maps" target="new"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</a></p>
-                <a href="https://www.facebook.com/events/783183325098945/" class="btn event-btn">Join in!</a>
+                <a href="https://www.facebook.com/events/783183325098945/" class="btn event-btn">Tell Us You're Coming!</a>
               </div>
               <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
             </div>
@@ -22,10 +22,11 @@
               </ul>
               <div class="expo-sponsors">
                 <h3>Sponsored By</h3>
-                <ul class="small-block-grid-3">
-                  <li><a href="http://tic.ocls.info/" target="new"><img src="img/expo/sponsors/sponsor_melrosecenter.png" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
+                <ul class="small-block-grid-4">
+                  <li><a href="http://tic.ocls.info/" target="new"><img src="img/expo/sponsors/sponsor_melrosecenter_vert.jpg" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
                   <li><a href="http://gamesartandmusic.com/" target="new"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
                   <li><a href="https://factur.org/" target="new"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
+                  <li><a href="http://www.daveschool.com/" target="new"><img src="img/expo/sponsors/sponsor_daveschool.jpg" alt="Factur"></a></li>
                 <ul>
               </div>
             </div>
@@ -71,6 +72,11 @@
           <li><a href="http://hapagames.com/" target="new"><img src="img/expo/exhibitors/studio_hapagames.png" alt="Hapa Games"></a></li>
           <li><a href="http://hapagames.com/" target="new"><img src="img/expo/exhibitors/game_ascendant.png" alt="Ascendant"></a></li>
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/studio_thatwhichismedia.png" alt="ThatWhichIsMedia"></a></li>
+          <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_time_to_die.png" alt="Time to Die"></a></li>
+          <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_knifey_spoony.png" alt="Knifey Spoony"></a></li>
+          <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_citizen_turkey_revolution.png" alt="Turkey Revolution"></a></li>
+          <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_those_devils_ducks.png" alt="Those Devils Ducks"></a></li>
+          <li><a href="http://crazyrockcreative.com" target="new"><img src="img/expo/exhibitors/studio_crazyrockcreative.png" alt="Crazy Rock Creative"></a></li>
           <li><a href="http://crazyrockcreative.com/omega-hero/" target="new"><img src="img/expo/exhibitors/game_omegahero.png" alt="Omega Hero"></a></li>
           <li><a href="http://www.burnoutgameventures.com/" target="new"><img src="img/expo/exhibitors/studio_burnoutgameventures.png" alt="Burnout Game Ventures"></a></li>
           <li><a href="http://www.gentlemansquidstudio.com/" target="new"><img src="img/expo/exhibitors/studio_gentlemensquid.png" alt="Gentlemen Squid Studio"></a></li>
@@ -78,7 +84,12 @@
           <li><a href="http://www.riseoftheravager.com/" target="new"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
           <li><a href="http://www.heroic-stand.com/" target="new"><img src="img/expo/exhibitors/studio_heroicstand.png" alt="Heroic Stand"></a></li>
           <li><a href="http://www.templetapgame.com/" target="new"><img src="img/expo/exhibitors/game_templetap.png" alt="Temple Tap"></a></li>
-          <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/exhibitors/company_indiebox.png" alt="Indiebox"></a></li>
+          <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/exhibitors/company_indiebox_lightbg.png" alt="Indiebox"></a></li>
+          <li><a href="http://invertgamestudios.com/" target="new"><img src="img/expo/exhibitors/studio_invertgamestudios.png" alt="Invert Game Studios"></a></li>
+          <li><a href="http://invertgamestudios.com/uframe-overview" target="new"><img src="img/expo/exhibitors/product_uframe.png" alt="Uframe"></a></li>
+          <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/studio_gamedevknights.jpg" alt="Game Dev Knights"></a></li>
+          <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/game_abyssal.jpg" alt="Abyssal"></a></li>
+          <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/game_hollow.jpg" alt="Hollow"></a></li>
         <ul>
       </div>
     </section>
@@ -95,8 +106,8 @@
           </div>
           <div class="small-12 medium-6 columns">
             <h3><strong>Indie Origins Panel Discussion</strong></h3>
-            <h4>2:30pm</h4>
-            <p>Hear the amazing, deep, dark, twisted and death defying origin stories of how several of our humble Orlando indie game studios began! ...Ok fine perhaps that’s being a bit over dramatic, but listen, starting a games studio isn’t easy! It takes a lot of effort and resources to do to start a studio and these are their stories.</p>
+            <h4>2:30pm - 3:30pm</h4>
+            <p>Hear the amazing, deep, dark, twisted and death defying origin stories of how several of our humble Orlando indie game studios began! ...Ok fine perhaps that’s being a bit over dramatic, but listen, starting a games studio isn’t easy! It takes a lot of effort and resources to start a studio and these are their stories.</p>
           </div>
         </div>
       </div>
@@ -106,8 +117,8 @@
       <div class="row">
         <div class="small-12 columns">
           <h2 id="cosplay-contest">Cosplay Contest</h2>
-          <h4>Winners Announced at 4:00pm</h4>
-          <p>Come as your favorite video game character and compete for the grand prize in the first Indienomicon Cosplay Contest! Winners will be announced at 4:00pm. To be eligible for entry, you must <strong>register by 3:00pm</strong></p>
+          <h4>Winners Announced at 4:30pm</h4>
+          <p>Come as your favorite video game character and compete for the grand prize in the first Indienomicon Cosplay Contest! Winners will be announced at 4:30pm. To be eligible for entry, you must <strong>register by 3:30pm</strong></p>
           <p class="image-credit"><a href="https://www.flickr.com/photos/cosplaytango/15285153390">(image credit)</a></p>
         </div>
       </div>
