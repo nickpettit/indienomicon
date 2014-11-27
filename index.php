@@ -76,9 +76,7 @@
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_knifey_spoony.png" alt="Knifey Spoony"></a></li>
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_citizen_turkey_revolution.png" alt="Turkey Revolution"></a></li>
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_those_devils_ducks.png" alt="Those Devils Ducks"></a></li>
-          <li><a href="http://crazyrockcreative.com" target="new"><img src="img/expo/exhibitors/studio_crazyrockcreative.png" alt="Crazy Rock Creative"></a></li>
-          <li><a href="http://crazyrockcreative.com/omega-hero/" target="new"><img src="img/expo/exhibitors/game_omegahero.png" alt="Omega Hero"></a></li>
-          <li><a href="http://www.burnoutgameventures.com/" target="new"><img src="img/expo/exhibitors/studio_burnoutgameventures.png" alt="Burnout Game Ventures"></a></li>
+          <li><a href="http://www.burnoutgameventures.com/" target="new"><img src="img/expo/exhibitors/studio_burnoutgameventures2.png" alt="Burnout Game Ventures"></a></li>
           <li><a href="http://www.gentlemansquidstudio.com/" target="new"><img src="img/expo/exhibitors/studio_gentlemensquid.png" alt="Gentlemen Squid Studio"></a></li>
           <li><a href="http://threedeadzed.com/" target="new"><img src="img/expo/exhibitors/game_3deadzed.png" alt="Three Dead Zed"></a></li>
           <li><a href="http://www.riseoftheravager.com/" target="new"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
@@ -90,6 +88,9 @@
           <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/studio_gamedevknights.jpg" alt="Game Dev Knights"></a></li>
           <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/game_abyssal.jpg" alt="Abyssal"></a></li>
           <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/game_hollow.jpg" alt="Hollow"></a></li>
+          <li><a href="http://creativegametheory.com/" target="new"><img src="img/expo/exhibitors/studio_skullskillstudios.png" alt="Skull Skill Studios"></a></li>
+          <li><a href="http://firewithfiregame.com/" target="new"><img src="img/expo/exhibitors/game_firewithfire.png" alt="Fire with Fire"></a></li>
+          <li><a href="http://www.archaia.com/archaia-titles/beronas-war/" target="new"><img src="img/expo/exhibitors/game_beronaswar.png" alt="Beronas War"></a></li>
         <ul>
       </div>
     </section>
