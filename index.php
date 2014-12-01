@@ -91,6 +91,8 @@
           <li><a href="http://creativegametheory.com/" target="new"><img src="img/expo/exhibitors/studio_skullskillstudios.png" alt="Skull Skill Studios"></a></li>
           <li><a href="http://firewithfiregame.com/" target="new"><img src="img/expo/exhibitors/game_firewithfire.png" alt="Fire with Fire"></a></li>
           <li><a href="http://www.archaia.com/archaia-titles/beronas-war/" target="new"><img src="img/expo/exhibitors/game_beronaswar.png" alt="Beronas War"></a></li>
+          <li><a href="http://www.indiedb.com/games/space-between" target="new"><img src="img/expo/exhibitors/studio_chronosapien.png" alt="Chronosapien Interactive"></a></li>
+          <li><a href="http://chronosapien.com/" target="new"><img src="img/expo/exhibitors/game_spacebetween.png" alt="Space Between"></a></li>
         <ul>
       </div>
     </section>
@@ -119,7 +121,7 @@
         <div class="small-12 columns">
           <h2 id="cosplay-contest">Cosplay Contest</h2>
           <h4>Winners Announced at 4:30pm</h4>
-          <p>Come as your favorite video game character and compete for the grand prize in the first Indienomicon Cosplay Contest! Winners will be announced at 4:30pm. To be eligible for entry, you must <strong>register by 3:30pm</strong></p>
+          <p>Come as your favorite video game character and compete for the <strong class="bigger">$100</strong> cash prize in the first Indienomicon Cosplay Contest! Winners will be announced at 4:30pm. To be eligible for entry, you must <strong>register by 3:30pm</strong></p>
           <p class="image-credit"><a href="https://www.flickr.com/photos/cosplaytango/15285153390">(image credit)</a></p>
         </div>
       </div>
