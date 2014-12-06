@@ -22,11 +22,12 @@
               </ul>
               <div class="expo-sponsors">
                 <h3>Sponsored By</h3>
-                <ul class="small-block-grid-4">
+                <ul class="small-block-grid-3 medium-block-grid-5">
                   <li><a href="http://tic.ocls.info/" target="new"><img src="img/expo/sponsors/sponsor_melrosecenter_vert.jpg" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
                   <li><a href="http://gamesartandmusic.com/" target="new"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
                   <li><a href="https://factur.org/" target="new"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
                   <li><a href="http://www.daveschool.com/" target="new"><img src="img/expo/sponsors/sponsor_daveschool.jpg" alt="Factur"></a></li>
+                  <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/sponsors/sponsor_indiebox.png" alt="Indiebox"></a></li>
                 <ul>
               </div>
             </div>
@@ -82,7 +83,6 @@
           <li><a href="http://www.riseoftheravager.com/" target="new"><img src="img/expo/exhibitors/game_riseoftheravager.png" alt="Rise of the Ravager"></a></li>
           <li><a href="http://www.heroic-stand.com/" target="new"><img src="img/expo/exhibitors/studio_heroicstand.png" alt="Heroic Stand"></a></li>
           <li><a href="http://www.templetapgame.com/" target="new"><img src="img/expo/exhibitors/game_templetap.png" alt="Temple Tap"></a></li>
-          <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/exhibitors/company_indiebox_lightbg.png" alt="Indiebox"></a></li>
           <li><a href="http://invertgamestudios.com/" target="new"><img src="img/expo/exhibitors/studio_invertgamestudios.png" alt="Invert Game Studios"></a></li>
           <li><a href="http://invertgamestudios.com/uframe-overview" target="new"><img src="img/expo/exhibitors/product_uframe.png" alt="Uframe"></a></li>
           <li><a href="https://www.facebook.com/groups/GameDevKnights/" target="new"><img src="img/expo/exhibitors/studio_gamedevknights.jpg" alt="Game Dev Knights"></a></li>
@@ -93,6 +93,7 @@
           <li><a href="http://www.archaia.com/archaia-titles/beronas-war/" target="new"><img src="img/expo/exhibitors/game_beronaswar.png" alt="Beronas War"></a></li>
           <li><a href="http://www.indiedb.com/games/space-between" target="new"><img src="img/expo/exhibitors/studio_chronosapien.png" alt="Chronosapien Interactive"></a></li>
           <li><a href="http://chronosapien.com/" target="new"><img src="img/expo/exhibitors/game_spacebetween.png" alt="Space Between"></a></li>
+          <li><a href="https://www.facebook.com/ArtByJP" target="new"><img src="img/expo/exhibitors/artofjpperez.png" alt="Art of J.P. Perez"></a></li>
         <ul>
       </div>
     </section>
