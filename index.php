@@ -22,12 +22,13 @@
               </ul>
               <div class="expo-sponsors">
                 <h3>Sponsored By</h3>
-                <ul class="small-block-grid-3 medium-block-grid-5">
+                <ul class="small-block-grid-3 medium-block-grid-6">
                   <li><a href="http://tic.ocls.info/" target="new"><img src="img/expo/sponsors/sponsor_melrosecenter_vert.jpg" alt="The Dorthy Lumley Melrose Center: Technology, Innovation, Creativity"></a></li>
                   <li><a href="http://gamesartandmusic.com/" target="new"><img src="img/expo/sponsors/sponsor_gaam.png" alt="GAAM: Games Art and Music"></a></li>
                   <li><a href="https://factur.org/" target="new"><img src="img/expo/sponsors/sponsor_factur.png" alt="Factur"></a></li>
                   <li><a href="http://www.daveschool.com/" target="new"><img src="img/expo/sponsors/sponsor_daveschool.jpg" alt="Factur"></a></li>
                   <li><a href="https://www.theindiebox.com/" target="new"><img src="img/expo/sponsors/sponsor_indiebox.png" alt="Indiebox"></a></li>
+                  <li><a href="http://www.joicaster.co/" target="new"><img src="img/expo/sponsors/sponsor_joicaster.png" alt="Joicaster"></a></li>
                 <ul>
               </div>
             </div>
@@ -70,8 +71,6 @@
           <li><a href="http://dropsytheclown.com/" target="new"><img src="img/expo/exhibitors/game_dropsy.png" alt="Dropsy"></a></li>
           <li><a href="https://www.facebook.com/magicitegame" target="new"><img src="img/expo/exhibitors/studio_smashgames.png" alt="Smash Games"></a></li>
           <li><a href="https://www.facebook.com/magicitegame" target="new"><img src="img/expo/exhibitors/game_magicite.png" alt="Magicite"></a></li>
-          <li><a href="http://hapagames.com/" target="new"><img src="img/expo/exhibitors/studio_hapagames.png" alt="Hapa Games"></a></li>
-          <li><a href="http://hapagames.com/" target="new"><img src="img/expo/exhibitors/game_ascendant.png" alt="Ascendant"></a></li>
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/studio_thatwhichismedia.png" alt="ThatWhichIsMedia"></a></li>
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_time_to_die.png" alt="Time to Die"></a></li>
           <li><a href="http://www.thatwhichismedia.com/" target="new"><img src="img/expo/exhibitors/game_knifey_spoony.png" alt="Knifey Spoony"></a></li>
