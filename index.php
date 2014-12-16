@@ -9,7 +9,7 @@
               <div class="next-event content-block">
                 <p class="event-date"><strong>Saturday, December 6th</strong><br>12:00pm - 5:00pm</p>
                 <p class="event-loc"><a href="https://www.google.com/maps/place/Melrose+Center+(Inside+of+Orlando+Public+Library)/@28.542464,-81.377149,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77afc378b4f97:0x88eb726c5efaecd4" title="View on Google Maps" target="new"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</a></p>
-                <a href="https://www.facebook.com/events/783183325098945/" class="btn event-btn">Tell Us You're Coming!</a>
+                <a href="https://www.facebook.com/media/set/?set=a.861757873844616.1073741854.179218862098524&type=1" class="btn event-btn">Check out the pics!</a>
               </div>
               <p class="event-note">Please note: We will <strong>not</strong> be holding our normal Thursday event in December. See you at the expo!</p>
             </div>
