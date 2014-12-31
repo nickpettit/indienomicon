@@ -1,11 +1,11 @@
 .hero {
   min-height: 350px;
-  background: url('../img/expo/hero.jpg') center center no-repeat;
+  background: url('../img/backgrounds/hero.jpg') center center no-repeat;
   background-size: cover;
   margin-bottom: 0;
   margin-top: 0;
   color: #FFF;
-  padding: 1em 0 3em 0;
+  padding: 3em 0;
 }
 
 @-webkit-keyframes scale-in {
@@ -37,6 +37,11 @@
   100% {
     transform: scale(1);
   }
+}
+
+.site-headline {
+  margin: 1.5em 0;
+  font-size: 2em;
 }
 
 .social {
@@ -156,6 +161,32 @@
   color: #FFF;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.organizers {
+  text-align: center;
+}
+
+.organizers li {
+  margin-bottom: 2em;
+}
+
+.organizers img {
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+}
+
+.organizers h4 {
+  margin: 0;
+}
+
+.organizers p {
+  margin-bottom: 0.5em;
+}
+
+.organizers .btn {
+  font-size: 0.8em;
 }
 
 

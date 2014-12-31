@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/expo.css">
 
     <link rel="shortcut icon" href="favicon.ico">
   </head>

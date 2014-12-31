@@ -4,8 +4,9 @@
     <section class="row">
       <div class="small-12 columns">
         <h2>Contact</h2>
+        <p>We would love to talk to you about getting connected with the growing Indienomicon community!</p>
+        
         <div class="content-block">
-          <p>We would love to talk to you about getting connected with the growing Indienomicon community!</p>
           <ul class="small-block-grid-1 medium-block-grid-3">
             <li>
               <h3>General Questions</h3>

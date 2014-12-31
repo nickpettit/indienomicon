@@ -1,7 +1,7 @@
 body {
   font-family: 'Droid Sans', sans-serif;
-  background: url('../img/shattered_@2X.png') fixed;
-  background-size: 500px;
+  background: url('../img/backgrounds/trianglify2.svg') fixed;
+  background-size: cover;
 }
 
 h2 {
@@ -34,6 +34,15 @@ a:hover {
 
 .bigger {
   font-size: 1.2em;
+}
+
+.plain-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.plain-list li {
+  margin-bottom: 1em;
 }
 
 
