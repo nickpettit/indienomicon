@@ -5,6 +5,7 @@
       <div class="small-12 columns">
         <h2>Games</h2>
         <p>Indienomicon events feature games created by indie developers that are local to the Central Florida area. Here you'll find all the games that have been presented at past events. If you'd like to come to our next event, check out the <a href="index.php">home page</a> for details.</p>
+        <p>Interested in <em>presenting</em> at one of our events? Fill out our <a href="http://form.jotform.us/form/50304551686151">game submission form</a> and we'll contact you.</p>
 
         <div class="game row collapse content-block">
           <div class="small-12 medium-1 columns game-image">

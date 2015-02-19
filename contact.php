@@ -5,7 +5,7 @@
       <div class="small-12 columns">
         <h2>Contact</h2>
         <p>We would love to talk to you about getting connected with the growing Indienomicon community!</p>
-        
+
         <div class="content-block">
           <ul class="small-block-grid-1 medium-block-grid-3">
             <li>
@@ -15,8 +15,8 @@
             </li>
             <li>
               <h3>Presenting</h3>
-              <p>Interested in <em>presenting</em> at one of our events? Contact Dave Sushil for more information and available dates.</p>
-              <a class="btn" href="mailto:david@indienomicon.com">Email David</a>
+              <p>Interested in <em>presenting</em> at one of our events? Fill out our <a href="http://form.jotform.us/form/50304551686151">game submission form</a> and we'll contact you.</p>
+              <a class="btn" href="http://form.jotform.us/form/50304551686151">Submit Game</a>
             </li>
             <li>
               <h3>Press</h3>
