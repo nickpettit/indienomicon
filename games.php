@@ -428,7 +428,7 @@
             <img src="img/games/chest_quest.png" alt="Chest Quest" style="width:64px; height:64px;" />
           </div>
           <div class="small-12 medium-11 columns">
-            <h3 class="game-title"><a href="http://www.panicpop.com" target="new">Chest Quest</a></h3>
+            <h3 class="game-title"><a href="http://www.panicpop.com" target="new"  target="new">Chest Quest</a></h3>
             <h4 class="game-maker">PanicPOP</h4>
             <p class="game-desc">Help Perry the parrot pirate find treasure on his epic adventure! But look out Shay the shark will try to stop you! This is a memory matching game but it has lots of game modes that make things interesting for puzzle lovers. For example a mimic mode where you must open chests in the same order as Shay the shark!</p>
           </div>
@@ -440,7 +440,7 @@
             <img src="img/games/bit_evolution.png" alt="BiT Evolution" style="width:64px; height: 64px;" />
           </div>
           <div class="small-12 medium-11 columns">
-            <h3 class="game-title"><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=169466344">BiT Evolution</a></h3>
+            <h3 class="game-title"><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=169466344"  target="new">BiT Evolution</a></h3>
             <h4 class="game-maker">Major Games</h4>
             <p class="game-desc">BiT: Evolution is a modern-retro platformer that pays homage to video gaming from the 1970's and 80's. The game is single player and follows the story of the main character, BiT. This character starts the game as a simple puck from a video game version of hockey who finds his way outside his world and into the realm of code; A mysterious place found between game levels. There, he explores multiple platformers and game types, with the visual aesthetic of each game evolving with time. BiT also evolves by learning new techniques on his adventures, upgrading himself with new code.</p>
           </div>
@@ -452,9 +452,33 @@
             <img src="img/games/fire_with_fire.png" alt="Fire with Fire" style="width:64px; height: 64px;" />
           </div>
           <div class="small-12 medium-11 columns">
-            <h3 class="game-title"><a href="https://www.kickstarter.com/projects/660810230/fire-with-fire-online-tower-attack-and-defense-0">Fire with Fire</a></h3>
+            <h3 class="game-title"><a href="https://www.kickstarter.com/projects/660810230/fire-with-fire-online-tower-attack-and-defense-0"  target="new">Fire with Fire</a></h3>
             <h4 class="game-maker">Skull Skill Studios</h4>
             <p class="game-desc">a competitive tower defense game where you use a customized roster of towers and creeps to both attack and defend. Counter your opponentâ€™s strategies in heated one-on-one online matches, or increase your arsenal by completing the single player campaign. Play on desktop, while your opponent plays on a tablet with online cross platform play support.</p>
+          </div>
+        </div>
+
+        <!-- Damsel in Distress -->
+        <div class="game row collapse content-block">
+          <div class="small-12 medium-1 columns game-image">
+            <img src="img/games/DamselInDistress.png" alt="DamselInDistress" style="width:64px; height: 64px;" />
+          </div>
+          <div class="small-12 medium-11 columns">
+            <h3 class="game-title"><a href="http://www.OuthouseGames.org" target="new">Damsel in Distress</a></h3>
+            <h4 class="game-maker">Outhouse Games</h4>
+            <p class="game-desc">An endless running jumper where you must travel down the ever winding tower to save your damsel in distress.</p>
+          </div>
+        </div>
+
+        <!-- Pencil Pushers -->
+        <div class="game row collapse content-block">
+          <div class="small-12 medium-1 columns game-image">
+            <img src="img/games/PencilPushers.png" alt="PencilPushers" style="width:64px; height: 64px;" />
+          </div>
+          <div class="small-12 medium-11 columns">
+            <h3 class="game-title"><a href="http://www.PlayPencilPushers.com" target="new">Pencil Pushers</a></h3>
+            <h4 class="game-maker">ThatWhichIsMedia + Peter Smith</h4>
+            <p class="game-desc">Pencil Pushers is a game that sets players against each other in an effort to escape detention. The player that manages to sharpen more of the teachers pencils is free to leave, while the other is doomed to remain in detention FOREVER.</p>
           </div>
         </div>
 

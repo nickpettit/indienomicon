@@ -7,10 +7,10 @@
         <div class="row">
           <div class="small-12 medium-5 columns">
             <div class="next-event content-block">
-              <h2 class="event-title">Monthly Meetup #20</h2>
-              <p class="event-date"><strong>Thursday, January 8th</strong><br>6:30pm - 9:30pm</p>
+              <h2 class="event-title">Monthly Meetup #22</h2>
+              <p class="event-date"><strong>Thursday, March 5th</strong><br>6:30pm - 9:30pm</p>
               <p class="event-loc"><a href="https://www.google.com/maps/place/Melrose+Center+(Inside+of+Orlando+Public+Library)/@28.542464,-81.377149,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77afc378b4f97:0x88eb726c5efaecd4" title="View on Google Maps" target="new"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</a></p>
-              <a href="https://www.facebook.com/events/1402429833382749/" class="btn event-btn">Tell us you're coming!</a>
+              <a href="https://www.facebook.com/events/841886379186451/" class="btn event-btn">Tell us you're coming!</a>
             </div>
           </div>
           <div class="small-12 medium-7 columns">
@@ -36,31 +36,41 @@
         <p>Indienomicon events feature games created by indie developers that are local to the Central Florida area. This month's games will be announced in this section soon, so stay tuned!</p>
       </div>
 
-      <!-- GAMES GO HERE!
+
 
       <div class="game row collapse content-block">
         <div class="small-12 medium-1 columns game-image">
-          <img src="img/games/the_thieving_tower.png" alt="The Theiving Tower Icon" />
+          <img src="img/games/CatFish_Hamhock.png" alt="Catfish" />
         </div>
         <div class="small-12 medium-11 columns">
-          <h3 class="game-title"><a href="http://www.terncraftgames.com/" target="new">The Thieving Tower</a></h3>
-          <h4 class="game-maker">Terncraft Games</h4>
-          <p class="game-desc">Scale the tower, avoid the traps, steal the treasure, and win the heart of the princess. Who would have thought a day's work could be this much fun? Avaiable now for PC, Mac, iOS, Android, Windows Phone, and NOOK.</p>
+          <h3 class="game-title"><a href="https://www.kickstarter.com/projects/hamhockgames/catfish" target="new">CatFish</a></h3>
+          <h4 class="game-maker">Hamhock Games </h4>
+          <p class="game-desc">Sail, Explore, Collect and Fish. Gear up, ready your whiskers and set out to sea with CatFish in this open world adventure!</p>
         </div>
       </div>
 
       <div class="game row collapse content-block">
         <div class="small-12 medium-1 columns game-image">
-          <img src="img/games/my_imaginary_friends.png" alt="My Imaginary Friends Icon" />
+          <img src="img/games/TypeTwister_CelleC.jpg" alt="TypeTwister" />
         </div>
         <div class="small-12 medium-11 columns">
-          <h3 class="game-title"><a href="http://mysteriousmanor.blogspot.com/" target="new">My Imaginary Friends</a></h3>
-          <h4 class="game-maker">Team Redundancy Team</h4>
-          <p class="game-desc">The only friends are the ones you make. Mallory awakes in a mysterious mansion, with only her make-believe childhood companions for company. Now she must use their fanciful abilities to survive in this exciting action-adventure game coming soon for the PC.</p>
+          <h3 class="game-title"><a href="http://www.cellecgames.com/" target="new">Games of CelleC</a></h3>
+          <h4 class="game-maker">CelleC Games</h4>
+          <p class="game-desc">We develop customized serious gaming solutions for the educational and corporate sectors.</p>
         </div>
       </div>
 
-      -->
+      <div class="game row collapse content-block">
+        <div class="small-12 medium-1 columns game-image">
+          <img src="img/games/2015DTOGGJ.png" alt="GGJ 2015 Games" />
+        </div>
+        <div class="small-12 medium-11 columns">
+          <h3 class="game-title"><a href="http://orlandogamejam.com/" target="new">2015 Game Jam Games</a></h3>
+          <h4 class="game-maker">Downtown Orlando Global Game Jam</h4>
+          <p class="game-desc">Come hear what all the jammers have been up to – rapid fire style. </p>
+        </div>
+      </div>
+
 
     </div>
   </section>
