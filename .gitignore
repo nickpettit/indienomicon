@@ -1,6 +1,8 @@
 .DS_Store
 */.DS_Store
 *.log
+readme.html
+license.txt
 .htaccess
 sitemap.xml
 sitemap.xml.gz
@@ -12,4 +14,5 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/plugins/
 wp-content/wp-cache-config.php

@@ -1,0 +1,934 @@
+/*
+Theme Name: Indienomicon
+Theme URI: https://wordpress.org/themes/indienomicon
+Author: Nick Pettit
+Author URI: https://nickpettit.com/
+Description: This is the WordPress theme for the official Indienomicon website.
+Version: 1.0
+Tags: indienomicon
+Text Domain: indienomicon
+
+This theme is copyright Indienomicon. You are not allowed to duplicate it without the express permission of the Indienomicon organization.
+*/
+
+
+/**********************************************************
+
+  GLOBAL STYLES
+
+ **********************************************************/
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background: url('images/backgrounds/trianglify2.svg') fixed;
+  background-size: cover;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6em;
+  color: rgba(0,0,0,0.75);
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+section.row {
+  margin-bottom: 4em;
+}
+
+a {
+  color: rgb(3, 99, 143);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: rgb(24, 154, 153);
+}
+
+.content-block,
+.row.collapse.content-block,
+.content-block-padded,
+.row.collapse.content-block-padded {
+  background-color: rgba(255,255,255,0.9);
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+
+.row.collapse.content-block {
+  padding: 0em;
+}
+
+.content-block-padded,
+.row.collapse.content-block-padded {
+  padding: 1em;
+}
+
+.bigger {
+  font-size: 1.2em;
+}
+
+.plain-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.plain-list li {
+  margin-bottom: 1em;
+}
+
+.slick-slider {
+  margin: 0 auto 3em;
+}
+
+#mc4wp-checkbox {
+  text-align: left;
+  box-shadow: none;
+  padding: 1em 0 0 1em;
+}
+
+.sidebar-large {
+  margin-bottom: 1em;
+}
+
+.sidebar-large ul {
+  list-style: none;
+  margin: 0;
+}
+
+.sidebar-large ul.content-block {
+  padding: 0;
+}
+
+.sidebar-large a {
+  border-bottom: 1px solid rgba(3, 99, 143, 0.1);
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar-large li.current-menu-item a,
+.sidebar-large li.current-menu-item a:hover,
+.sidebar-large li.current-menu-item a:focus {
+  background: rgba(24, 154, 153, 1);
+  color: #FFF;
+}
+
+.sidebar-large li a:hover,
+.sidebar-large li a:focus {
+  background: rgba(24, 154, 153, 0.1);
+  color: rgb(3, 99, 143);
+}
+
+@media only screen and (min-width: 30em) {
+  .sidebar-large li:first-child a {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  .sidebar-large li:last-child a {
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  h2 {
+    font-size: 2em;
+  }
+
+}
+
+/* Large Screens (Laptops) */
+@media only screen and (min-width: 64.063em) {
+
+  h2 {
+    font-size: 3em;
+  }
+
+}
+
+
+
+/**********************************************************
+
+  FORMS
+
+ **********************************************************/
+
+textarea,
+input[type=text],
+input[type=text],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+input[type=password],
+input[type=search],
+input[type=text],
+input[type=search],
+input[type=text] {
+	border: 1px solid rgba(3, 99, 143, 0.3);
+  box-shadow: inset 0px 1px 2px rgba(3, 99, 143, 0.2);
+	background: #FFF;
+	color: #000;
+	font-size: 1em;
+	padding: 6px;
+	outline: none;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	border-color: rgba(3, 99, 143, 0.8);
+  box-shadow: 0px 0px 4px rgba(3, 99, 143, 0.6);
+}
+
+
+
+/**********************************************************
+
+  BUTTONS
+
+ **********************************************************/
+
+.button,
+a.button {
+  background: rgb(24, 154, 153);
+  color: #FFF;
+  padding: 12px 14px;
+  border-radius: 4em;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.button:hover,
+.button:focus,
+a.button:hover,
+a.button:focus  {
+  background: rgb(44, 174, 173);
+}
+
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  .button,
+  a.button {
+    font-size: 1.1rem;
+    padding: 0.5em 1.2em;
+  }
+
+}
+
+
+
+/**********************************************************
+
+  HEADER
+
+ **********************************************************/
+
+header {
+  background: #FFF;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.65em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px auto 0px auto;
+  width: 235px;
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  transition: transform 100ms ease-out;
+  display: block;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #000;
+  -webkit-transform: scale(1.1) rotate(-1deg);
+  transform: scale(1.1) rotate(-1deg);
+}
+
+.logo img {
+  max-width: 25px;
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  transition: transform 100ms ease-out;
+  margin-right: 5px;
+}
+
+.logo:hover img
+.logo:focus img {
+  -webkit-transform: scale(1.1) translate(-1px, 1px) rotate(-2deg);
+  transform: scale(1.1) translate(-1px, 1px) rotate(-2deg);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0.3em;
+  display: block;
+}
+
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  .logo {
+    width: auto;
+    margin: 10px 0 0 5%;
+  }
+
+  .logo img {
+    max-width: 35px;
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  nav a {
+    padding: 20px 0.3em;
+  }
+
+}
+
+/* Large Screens (Laptops) */
+@media only screen and (min-width: 64.063em) {
+
+  .logo {
+    margin-left: 0;
+    font-size: 2rem;
+  }
+
+  .logo:hover img,
+  .logo:focus img {
+    -webkit-transform: scale(1.4) translate(-10px, 5px) rotate(-3deg);
+    transform: scale(1.4) translate(-10px, 5px) rotate(-3deg);
+  }
+
+  nav a {
+    padding: 1em 0.6em;
+    font-size: 1.2em;
+  }
+
+}
+
+
+
+/**********************************************************
+
+  FOOTER
+
+ **********************************************************/
+
+footer {
+  background: #383b5d;
+  color: #FFF;
+  padding: 3em 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+footer h1,
+footer h2,
+footer a {
+  color: #FFF;
+}
+
+footer ul {
+  font-size: 1.2em;
+  margin-left: 2em;
+  font-weight: bold;
+}
+
+.footer-logo {
+  max-height: 200px;
+  transform: rotate(-5deg);
+  padding: 0 1em;
+  transition: all 100ms ease-out;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  transform: rotate(-2deg);
+}
+
+
+
+/**********************************************************
+
+  PAGE - LOGIN
+
+ **********************************************************/
+
+#login {
+  margin: 0em auto 2em;
+  width: 90%;
+}
+
+#login form {
+  background-color: rgba(255,255,255,0.9);
+  padding: 1em;
+}
+
+#login h1 {
+  display: none;
+}
+
+#login form#loginform p.forgetmenot,
+#login form p.submit {
+  margin: 1em 0;
+}
+
+#login div#login_error {
+  margin: 0 0 15px;
+	background-color: #fdc;
+	border: 1px solid #a00;
+	color: #800;
+  padding: 0.5em;
+}
+
+#login p.message {
+  margin: 0 0 15px;
+	background-color: #efc;
+	border: 1px solid #591;
+	color: #250;
+  padding: 0.5em;
+}
+
+#login #pass-strength-result {
+  width: 100%;
+}
+
+@media only screen and (min-width: 40em) {
+
+  #login {
+    margin: 0em auto 4em;
+    width: 350px;
+  }
+
+  #login form {
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(3, 99, 143, 0.1);
+  }
+}
+
+/**********************************************************
+
+  EVERYTHING ELSE
+
+ **********************************************************/
+
+.hero {
+  min-height: 350px;
+  background: url('images/backgrounds/hero.jpg') center center no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #FFF;
+  padding: 3em 0;
+}
+
+@-webkit-keyframes scale-in {
+  0% {
+    -wekbit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    -wekbit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.site-headline {
+  margin: 1.5em 0;
+  font-size: 2em;
+}
+
+.social {
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.social a {
+  display: block;
+  width: 45px;
+  height: 30px;
+  text-indent: -2000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.facebook a { background-image: url('images/social/facebook.svg'); }
+.twitter a { background-image: url('images/social/twitter.svg'); }
+.youtube a { background-image: url('images/social/youtube.svg'); }
+
+.next-event {
+  color: #000;
+  -webkit-animation: scale-in 400ms ease-out 300ms;
+  animation: scale-in 400ms ease-out 300ms;
+}
+
+.event-title {
+  display: block;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #000;
+  text-shadow: none;
+  margin-top: 0;
+}
+
+.event-note {
+  text-align: center;
+  margin: 0;
+}
+
+
+
+/**********************************************************
+
+  PAGE - GAME INDEX VIEW
+
+ **********************************************************/
+
+#game-index .game-logo {
+  min-height: 370px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#game-index .game-title,
+#game-index .studio-name,
+#game-index .game-description {
+  padding: 0 2rem;
+}
+
+#game-index .game-title {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+}
+
+#game-index .studio-name {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/**********************************************************
+
+  PAGE - SINGLE GAME VIEW
+
+ **********************************************************/
+
+body.single-game .game-banner {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  margin-top: 68px;
+}
+
+body.single-game .game-basic-info {
+  margin: 8em auto 4em;
+}
+
+body.single-game .game-basic-info h2,
+body.single-game .game-basic-info p {
+  text-align: center;
+  margin: 0 auto;
+  color: #FFF;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+  font-weight: bold;
+}
+
+body.single-game .game-basic-info h2 {
+  font-size: 1.3em;
+}
+
+body.single-game .game-basic-info p {
+  font-size: 0.9em;
+}
+
+body.single-game .game-full-info {
+  background-color: #FFF;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+}
+
+body.single-game .game-description {
+  margin-bottom: 2em;
+}
+
+body.single-game .game-logo {
+  margin-bottom: 1em;
+}
+
+.section-callout {
+  background: rgb(24, 154, 153);
+  color: #FFF;
+  padding: 3em 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-callout h2,
+.section-callout h3 {
+  color: #FFF;
+}
+
+.section-callout .button {
+  color: #FFF;
+  background-color: rgb(3, 99, 143);
+}
+
+.section-callout .button:hover,
+.section-callout .button:focus {
+  background-color: rgb(23, 119, 163);
+}
+
+.section-callout a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+/**********************************************************
+
+  PAGE - STAFF
+
+ **********************************************************/
+
+.staff {
+  text-align: center;
+}
+
+.staff li {
+  margin-bottom: 2em;
+}
+
+.staff img {
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+}
+
+.staff h4 {
+  margin: 0;
+}
+
+.staff p {
+  margin-bottom: 0.5em;
+}
+
+.staff .button {
+  width: 50%;
+  font-size: 0.8em;
+}
+
+
+
+
+/**********************************************************
+
+  MEDIA QUERIES
+
+ **********************************************************/
+
+
+@media only screen and (min-width: 30em) {
+
+  .content-block,
+  .row.collapse.content-block,
+  .content-block-padded,
+  .row.collapse.content-block-padded {
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(3, 99, 143, 0.1);
+  }
+
+  #game-index .game-logo {
+    min-height: 270px;
+    background-size: 50%;
+    background-position: center;
+    margin: 1em auto;
+  }
+
+  body.single-game .game-banner {
+    height: 400px;
+  }
+
+  body.single-game .game-basic-info {
+    height: 50px;
+  }
+
+  body.single-game .game-basic-info h2 {
+    font-size: 1.6em;
+  }
+
+  body.single-game .game-basic-info p {
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+
+
+}
+
+/* Medium Screens (Tablets) */
+@media only screen and (min-width: 40.063em) {
+
+  .hero {
+    min-height: 200px;
+  }
+
+  .social {
+    text-align: left;
+  }
+
+  .social li {
+    margin: 0 1em 0 0;
+  }
+
+  .section-callout input {
+    width: auto;
+    margin: 0 0.5em 0 0;
+  }
+
+  #game-index .game-logo {
+    min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+  }
+
+  body.single-game .game-banner {
+    height: 500px;
+  }
+
+  body.single-game .game-basic-info {
+    height: 100px;
+  }
+
+  body.single-game .game-basic-info h2,
+  body.single-game .game-basic-info p {
+    font-weight: normal;
+  }
+
+  body.single-game .game-basic-info h2 {
+    font-size: 2.5em;
+  }
+
+  body.single-game .game-basic-info p {
+    font-size: 1.1em;
+  }
+
+  .sidebar {
+    border-left: 1px solid rgba(3, 99, 143, 0.1);
+  }
+
+}
+
+/* Large Screens (Laptops) */
+@media only screen and (min-width: 64.063em) {
+
+  .hero {
+    min-height: 480px;
+  }
+
+  .event-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+  }
+
+  .event-loc a {
+    color: #000;
+  }
+
+  .event-date, .event-loc {
+    padding-left: 4em;
+    color: #000;
+  }
+
+  .event-date strong, .event-loc strong {
+    font-size: 1.1em;
+  }
+
+  .event-date {
+    background: url('images/event-date.svg') left center no-repeat;
+    background-size: 45px;
+  }
+
+  .event-loc {
+    background: url('images/event-loc.svg') left 8px no-repeat;
+    background-size: 40px;
+  }
+
+  .social {
+    margin: 1em 0 0 0;
+  }
+
+  #game-index .game-logo {
+    min-height: 242px;
+    background-size: cover;
+  }
+
+  body.single-game .game-basic-info {
+    height: 130px;
+  }
+
+  body.single-game .game-basic-info h2 {
+    font-size: 4em;
+  }
+
+  body.single-game .game-basic-info p {
+    font-size: 1.3em;
+  }
+
+  .section-callout input {
+    padding: 1.2em;
+    font-size: 1.2em;
+  }
+
+  .section-callout .button {
+    padding: 1.2em 3em;
+  }
+
+}
+
+
+
+
+
+
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+
+
+  /* Parallax additions
+  --------------------------------------------- */
+
+  body.single-game header {
+    position: fixed;
+    z-index: 100;
+  }
