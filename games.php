@@ -483,6 +483,30 @@
           </div>
         </div>
 
+        <!-- CatFish -->
+        <div class="game row collapse content-block">
+          <div class="small-12 medium-1 columns game-image">
+            <img src="img/games/CatFish_Hamhock.png" alt="Catfish" />
+          </div>
+          <div class="small-12 medium-11 columns">
+            <h3 class="game-title"><a href="https://www.kickstarter.com/projects/hamhockgames/catfish" target="new">CatFish</a></h3>
+            <h4 class="game-maker">Hamhock Games </h4>
+            <p class="game-desc">Sail, Explore, Collect and Fish. Gear up, ready your whiskers and set out to sea with CatFish in this open world adventure!</p>
+          </div>
+        </div>
+
+        <!-- Games of CelleC -->
+        <div class="game row collapse content-block">
+          <div class="small-12 medium-1 columns game-image">
+            <img src="img/games/TypeTwister_CelleC.jpg" alt="TypeTwister" />
+          </div>
+          <div class="small-12 medium-11 columns">
+            <h3 class="game-title"><a href="http://www.cellecgames.com/" target="new">Games of CelleC</a></h3>
+            <h4 class="game-maker">CelleC Games</h4>
+            <p class="game-desc">We develop customized serious gaming solutions for the educational and corporate sectors.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
