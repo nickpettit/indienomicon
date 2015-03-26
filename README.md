@@ -1,6 +1,7 @@
-# Project Name
+# Indienomicon Website
 
-This is the Indienomicon website, available at [http://indienomicon.com](http://indienomicon.com)
+This repository contains the Indienomicon website,
+available at [http://indienomicon.com](http://indienomicon.com)
 
 ## Installation
 
