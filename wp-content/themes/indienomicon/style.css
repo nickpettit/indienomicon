@@ -544,6 +544,35 @@ footer ul {
   margin: 0;
 }
 
+.section-callout {
+  background: rgb(24, 154, 153);
+  color: #FFF;
+  padding: 3em 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-callout h2,
+.section-callout h3 {
+  color: #FFF;
+}
+
+.section-callout .button {
+  color: #FFF;
+  background-color: rgb(3, 99, 143);
+}
+
+.section-callout .button:hover,
+.section-callout .button:focus {
+  background-color: rgb(23, 119, 163);
+}
+
+.section-callout a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 
 /**********************************************************
@@ -628,33 +657,59 @@ body.single-game .game-logo {
   margin-bottom: 1em;
 }
 
-.section-callout {
-  background: rgb(24, 154, 153);
-  color: #FFF;
-  padding: 3em 0;
-  margin-top: 0;
-  margin-bottom: 0;
+body.single-game .links {
+  list-style: none;
+  margin: 0;
 }
 
-.section-callout h2,
-.section-callout h3 {
-  color: #FFF;
+body.single-game .links li {
+  margin: 10px 0;
 }
 
-.section-callout .button {
-  color: #FFF;
-  background-color: rgb(3, 99, 143);
+body.single-game .links a {
+  padding: 10px 0;
+  padding-left: 55px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  min-height: 35px;
 }
 
-.section-callout .button:hover,
-.section-callout .button:focus {
-  background-color: rgb(23, 119, 163);
+body.single-game .links a.demo {
+  background-image: url('images/icons/demo.svg');
 }
 
-.section-callout a {
-  color: #FFF;
-  font-weight: bold;
-  text-decoration: underline;
+body.single-game .links a.facebook {
+  background-image: url('images/icons/facebook.svg');
+}
+
+body.single-game .links a.indiegogo {
+  background-image: url('images/icons/indiegogo.svg');
+}
+
+body.single-game .links a.kickstarter {
+  background-image: url('images/icons/kickstarter.svg');
+}
+
+body.single-game .links a.steam {
+  background-image: url('images/icons/steam.svg');
+}
+
+body.single-game .links a.twitch {
+  background-image: url('images/icons/twitch.svg');
+}
+
+body.single-game .links a.twitter {
+  background-image: url('images/icons/twitter.svg');
+}
+
+body.single-game .links a.website {
+  background-image: url('images/icons/website.svg');
+}
+
+body.single-game .links a.youtube {
+  background-image: url('images/icons/youtube.svg');
 }
 
 

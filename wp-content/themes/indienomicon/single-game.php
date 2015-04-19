@@ -97,8 +97,8 @@ $game_logo = get_field('game_logo');
 
             <?php if (get_field('studio_name')): ?>
               <p><strong>Studio:</strong><br>
-                <?php if (get_field('studio_website')): ?>
-                  <a href="<?php the_field('studio_website'); ?>" target="new"><?php the_field('studio_name'); ?></a>
+                <?php if ($studio_website = get_field('studio_website')): ?>
+                  <a href="<?php echo $studio_website['url']; ?>" target="new"><?php the_field('studio_name'); ?></a>
                 <?php else: ?>
                   <?php the_field('studio_name'); ?>
                 <?php endif; ?>
@@ -129,16 +129,56 @@ $game_logo = get_field('game_logo');
               <p><strong>Expected Completion:</strong><br> <?php echo $expected_completion->format('M Y'); ?></p>
             <?php endif; ?>
 
-            <?php if (get_field('game_website')): ?>
-              <p><strong>Game Website:</strong><br> <a href="<?php the_field('game_website'); ?>" target="new"><?php the_field('game_website'); ?></a></p>
-            <?php endif; ?>
+            <?php if (get_field('game_website')
+                      || get_field('playable_demo_link')
+                      || get_field('kickstarter_link')
+                      || get_field('indiegogo_link')
+                      || get_field('steam_greenlight_link')
+                      || get_field('facebook_link')
+                      || get_field('twitter_link')
+                      || get_field('youtube_link')
+                      || get_field('twitch_link')
+                      ): ?>
+              <strong>Links:</strong>
+              <ul class="links">
 
-            <?php if (get_field('campaign_links')): ?>
-              <p><strong>Campaign Links:</strong><br> <?php the_field('campaign_links'); ?></p>
-            <?php endif; ?>
+                <?php if ($game_website = get_field('game_website')): ?>
+                	<li><a href="<?php echo $game_website['url'] ?>" class="website" target="new">Game Website</a></li>
+                <?php endif; ?>
 
-            <?php if (get_field('social_links')): ?>
-              <p><strong>Social Links:</strong><br> <?php the_field('social_links'); ?></p>
+                <?php if ($playable_demo_link = get_field('playable_demo_link')): ?>
+                	<li><a href="<?php echo $playable_demo_link['url'] ?>" class="demo" target="new">Playable Demo</a></li>
+                <?php endif; ?>
+
+                <?php if ($kickstarter_link = get_field('kickstarter_link')): ?>
+                	<li><a href="<?php echo $kickstarter_link['url'] ?>" class="kickstarter" target="new">Kickstarter</a></li>
+                <?php endif; ?>
+
+                <?php if ($indiegogo_link = get_field('indiegogo_link')): ?>
+                	<li><a href="<?php echo $indiegogo_link['url'] ?>" class="indiegogo" target="new">Indiegogo</a></li>
+                <?php endif; ?>
+
+                <?php if ($steam_greenlight_link = get_field('steam_greenlight_link')): ?>
+                	<li><a href="<?php echo $steam_greenlight_link['url'] ?>" class="steam" target="new">Steam Greenlight</a></li>
+                <?php endif; ?>
+
+                <?php if ($facebook_link = get_field('facebook_link')): ?>
+                	<li><a href="<?php echo $facebook_link['url'] ?>" class="facebook" target="new">Facebook</a></li>
+                <?php endif; ?>
+
+                <?php if ($twitter_link = get_field('twitter_link')): ?>
+                	<li><a href="<?php echo $twitter_link['url'] ?>" class="twitter" target="new">Twitter</a></li>
+                <?php endif; ?>
+
+                <?php if ($youtube_link = get_field('youtube_link')): ?>
+                	<li><a href="<?php echo $youtube_link['url'] ?>" class="youtube" target="new">YouTube</a></li>
+                <?php endif; ?>
+
+                <?php if ($twitch_link = get_field('twitch_link')): ?>
+                	<li><a href="<?php echo $twitch_link['url'] ?>" class="twitch" target="new">Twitch</a></li>
+                <?php endif; ?>
+
+            	</ul>
             <?php endif; ?>
 
           </div>

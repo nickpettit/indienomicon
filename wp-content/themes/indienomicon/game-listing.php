@@ -9,8 +9,9 @@
     <h3 class="game-title"><a href="<?php the_permalink(); ?>"><?php the_field('project_title'); ?></a></h3>
 
     <h4 class="studio-name">
-      <?php if (get_field('studio_website')): ?>
-        <a href="<?php the_field('studio_website'); ?>" target="new"><?php the_field('studio_name'); ?></a>
+      <?php if ($studio_website = get_field('studio_website')): ?>
+
+        <a href="<?php echo $studio_website['url']; ?>" target="new"><?php the_field('studio_name'); ?></a>
       <?php else: ?>
         <?php the_field('studio_name'); ?>
       <?php endif; ?>
