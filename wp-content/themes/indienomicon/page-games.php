@@ -19,18 +19,18 @@
     <div class="content-block-padded">
       <div class="row game-submission">
         <?php if ( is_user_logged_in() ): ?>
-          <div class="small-12 medium-8 columns">
-            <p>Interested in presenting at an Indienomicon event? Submit your game!</p>
-          </div>
           <div class="small-12 medium-4 columns">
             <a href="<?php echo admin_url( 'post-new.php?post_type=game' ); ?>" class="button">Submit a Game</a>
           </div>
-        <?php else: ?>
           <div class="small-12 medium-8 columns">
-            <p>Interested in presenting your game at an Indienomicon event? Register your Indienomicon account and then come back to this page to submit your game!</p>
+            <p>Interested in presenting at an Indienomicon event? Submit your game!</p>
           </div>
+        <?php else: ?>
           <div class="small-12 medium-4 columns">
             <a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
+          </div>
+          <div class="small-12 medium-8 columns">
+            <p>Interested in presenting your game at an Indienomicon event? Register your Indienomicon account and then come back to this page to submit your game!</p>
           </div>
         <?php endif; ?>
       </div>

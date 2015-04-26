@@ -52,6 +52,17 @@ $game_logo = get_field('game_logo');
           <p class="studio-name"><?php the_field('studio_name'); ?></p>
         </section>
 
+        <?php if (current_user_can('edit_post', get_the_ID())): ?>
+          <div class="row content-block">
+            <div class="small-4 columns">
+              <a href="<?php echo get_edit_post_link(); ?>" class="button">Edit this Game</a>
+            </div>
+            <div class="small-8 columns">
+              <p>You're able to edit this game! That usually means you're the person that created it. To see this page <em>without</em> this button, view the page while logged out.</p>
+            </div>
+          </div>
+        <?php endif; ?>
+
         <section class="row game-full-info content-block">
 
           <div class="small-12 medium-9 columns">
@@ -79,7 +90,7 @@ $game_logo = get_field('game_logo');
               </div>
             <?php endif; ?>
 
-            <?php if (get_field('long_game_description')): ?>
+            <?php if (get_field('studio_description')): ?>
               <div class="studio-description">
                 <h3>About <?php the_field('studio_name'); ?></h3>
                 <p><?php the_field('studio_description'); ?></p>
