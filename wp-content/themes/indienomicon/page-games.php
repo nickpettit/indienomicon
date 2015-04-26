@@ -58,6 +58,8 @@
 
       ?>
 
+      <?php get_template_part('games-archive'); ?>
+
   </div>
 </section>
 
