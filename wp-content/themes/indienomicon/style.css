@@ -583,7 +583,7 @@ footer ul {
 
 #game-index .game-logo {
   min-height: 370px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -768,10 +768,10 @@ body.single-game .links a.youtube {
   }
 
   #game-index .game-logo {
-    min-height: 270px;
-    background-size: 50%;
     background-position: center;
+    background-size: contain;
     margin: 1em auto;
+    min-height: 242px;
   }
 
   body.single-game .game-banner {
@@ -816,10 +816,9 @@ body.single-game .links a.youtube {
   }
 
   #game-index .game-logo {
-    min-height: 230px;
-    background-size: cover;
     background-position: center;
     margin: 0;
+    background-size: 90%;
   }
 
   body.single-game .game-banner {
@@ -887,11 +886,6 @@ body.single-game .links a.youtube {
 
   .social {
     margin: 1em 0 0 0;
-  }
-
-  #game-index .game-logo {
-    min-height: 242px;
-    background-size: cover;
   }
 
   body.single-game .game-basic-info {
