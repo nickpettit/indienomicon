@@ -14,8 +14,6 @@ get_header(); ?>
 						<div class="content-block-padded">
 							<div class="next-event">
 								<?php the_content(); ?>
-								<p class="event-loc"><a href="https://www.google.com/maps/place/Melrose+Center+(Inside+of+Orlando+Public+Library)/@28.542464,-81.377149,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77afc378b4f97:0x88eb726c5efaecd4" title="View on Google Maps" target="new"><strong>The Melrose Center <br>at the Downtown Library</strong><br>101 E Central Blvd, Orlando, FL 32801</a></p>
-								<a href="https://www.facebook.com/events/1402429833382749/" class="button">Tell us you're coming!</a>
 							</div>
 						</div>
 					</div>
