@@ -12,17 +12,23 @@ $game_media = array(
 $banner_image = get_field('banner_image');
 $game_logo = get_field('game_logo');
 
+// gather the studio relationship
+$studios = get_field('studio');
+
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 <script>
   jQuery(document).ready(function(){
     jQuery('.screenshot-slider').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
+      autoplay: false,
       dots: true,
-      arrows: false
+      arrows: true,
+      appendArrows: jQuery('.arrows')
     });
+
+    jQuery(".fitvid").fitVids();
+
   });
 </script>
 
@@ -34,11 +40,11 @@ $game_logo = get_field('game_logo');
 
       <div class="parallax__layer parallax__layer--deep">
       <?php if ($banner_image): // If there's a game banner, set it as the background. ?>
-        <section class="game-banner" style="background-image:
+        <section class="banner" style="background-image:
                                               radial-gradient(ellipse, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.8) 100%),
                                               url('<?php echo $banner_image['url']; ?>')">
       <?php else: // Otherwise, if there's no game banner, just make it a nice color. ?>
-        <section class="game-banner" style="background-color: rgb(24, 154, 153);">
+        <section class="banner" style="background-color: rgb(24, 154, 153);">
       <?php endif; ?>
         </section>
       </div>
@@ -47,9 +53,13 @@ $game_logo = get_field('game_logo');
       <!-- NOTE: This parallax__layer div is closed in the footer template -->
       <div class="parallax__layer parallax__layer--base">
 
-        <section class="game-basic-info">
+        <section class="basic-info">
           <h2><?php the_field('project_title'); ?></h2>
-          <p class="studio-name"><?php the_field('studio_name'); ?></p>
+          <?php if ($studios): ?>
+            	<?php foreach( $studios as $studio ): ?>
+                  <p class="studio-name"><?php the_field('studio_name', $studio->ID); ?></p>
+            	<?php endforeach; ?>
+          <?php endif; ?>
         </section>
 
         <?php if (current_user_can('edit_post', get_the_ID())): ?>
@@ -63,12 +73,27 @@ $game_logo = get_field('game_logo');
           </div>
         <?php endif; ?>
 
-        <section class="row game-full-info content-block">
+        <section class="row full-info content-block">
 
           <div class="small-12 medium-9 columns">
 
-            <?php if ($game_media): ?>
+            <?php if (   $game_media[0]
+                      || $game_media[1]
+                      || $game_media[2]
+                      || get_field('video_link')
+                      ): ?>
               <ul class="screenshot-slider">
+
+                <?php if (get_field('video_link')): ?>
+                  <?php
+                      // extract the YouTube ID from the full URL
+                      $url = get_field('video_link');
+                      preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $url, $matches);
+                      $id = $matches[1];
+                  ?>
+                  <li class="fitvid"><iframe width="640" height="360" src="https://www.youtube.com/embed/<?php echo $id; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
+                <?php endif; ?>
+
                 <?php foreach ($game_media as $image): ?>
                   <?php if ($image): ?>
                     <li>
@@ -76,11 +101,16 @@ $game_logo = get_field('game_logo');
                     </li>
                   <?php endif; ?>
                 <?php endforeach; ?>
+
               </ul>
+              <div class="arrows"></div>
             <?php endif; ?>
 
+
+
+
             <?php if (get_field('short_game_description') || get_field('long_game_description')): ?>
-              <div class="game-description">
+              <div class="description">
                 <h3>Synopsis</h3>
                 <?php if (get_field('long_game_description')): ?>
                   <?php the_field('long_game_description'); ?>
@@ -90,30 +120,22 @@ $game_logo = get_field('game_logo');
               </div>
             <?php endif; ?>
 
-            <?php if (get_field('studio_description')): ?>
-              <div class="studio-description">
-                <h3>About <?php the_field('studio_name'); ?></h3>
-                <p><?php the_field('studio_description'); ?></p>
-              </div>
-            <?php endif; ?>
-
           </div>
 
 
           <div class="small-12 medium-3 columns sidebar">
 
             <?php if ($game_logo): ?>
-              <img src="<?php echo $game_logo['url']; ?>" alt="<?php the_field('project_title'); ?>" class="game-logo" />
+              <img src="<?php echo $game_logo['url']; ?>" alt="<?php the_field('project_title'); ?>" class="logo" />
             <?php endif; ?>
 
-            <?php if (get_field('studio_name')): ?>
-              <p><strong>Studio:</strong><br>
-                <?php if ($studio_website = get_field('studio_website')): ?>
-                  <a href="<?php echo $studio_website['url']; ?>" target="new"><?php the_field('studio_name'); ?></a>
-                <?php else: ?>
-                  <?php the_field('studio_name'); ?>
-                <?php endif; ?>
-              </p>
+            <?php if ($studios): ?>
+              	<?php foreach( $studios as $studio ): ?>
+                    <p>
+                      <strong>Studio:</strong><br>
+                      <a href="<?php echo get_permalink( $studio->ID ); ?>"><?php the_field('studio_name', $studio->ID); ?></a>
+                    </p>
+              	<?php endforeach; ?>
             <?php endif; ?>
 
             <?php if (get_field('genre')): ?>

@@ -24,6 +24,7 @@
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<?php wp_head(); ?>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -31,7 +32,7 @@
 		<header>
 			<div class="row collapse">
 				<h1 class="small-12 medium-6 columns">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/indienomicon-logo.svg" alt="Indienomicon Logo">Indienomicon</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo"><img src="<?php bloginfo('template_directory'); ?>/images/indienomicon-logo.svg" alt="Indienomicon Logo">Indienomicon</a>
 				</h1>
 				<nav class="small-12 medium-6 columns">
 					<?php wp_nav_menu( array( 'theme_location' => 'top-level-navigation' ) ); ?>

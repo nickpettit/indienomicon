@@ -47,6 +47,10 @@ a:focus {
   color: rgb(24, 154, 153);
 }
 
+iframe {
+  border: none;
+}
+
 .content-block,
 .row.collapse.content-block,
 .content-block-padded,
@@ -253,7 +257,7 @@ header {
   z-index: 100;
 }
 
-.logo {
+.site-logo {
   color: #000;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 0.65em;
@@ -266,22 +270,22 @@ header {
   display: block;
 }
 
-.logo:hover,
-.logo:focus {
+.site-logo:hover,
+.site-logo:focus {
   color: #000;
   -webkit-transform: scale(1.1) rotate(-1deg);
   transform: scale(1.1) rotate(-1deg);
 }
 
-.logo img {
+.site-logo img {
   max-width: 25px;
   -webkit-transition: -webkit-transform 100ms ease-out;
   transition: transform 100ms ease-out;
   margin-right: 5px;
 }
 
-.logo:hover img
-.logo:focus img {
+.site-logo:hover img
+.site-logo:focus img {
   -webkit-transform: scale(1.1) translate(-1px, 1px) rotate(-2deg);
   transform: scale(1.1) translate(-1px, 1px) rotate(-2deg);
 }
@@ -308,12 +312,12 @@ nav a {
 /* Medium Screens (Tablets) */
 @media only screen and (min-width: 40.063em) {
 
-  .logo {
+  .site-logo {
     width: auto;
     margin: 10px 0 0 5%;
   }
 
-  .logo img {
+  .site-logo img {
     max-width: 35px;
   }
 
@@ -330,13 +334,13 @@ nav a {
 /* Large Screens (Laptops) */
 @media only screen and (min-width: 64.063em) {
 
-  .logo {
+  .site-logo {
     margin-left: 0;
     font-size: 2rem;
   }
 
-  .logo:hover img,
-  .logo:focus img {
+  .site-logo:hover img,
+  .site-logo:focus img {
     -webkit-transform: scale(1.4) translate(-10px, 5px) rotate(-3deg);
     transform: scale(1.4) translate(-10px, 5px) rotate(-3deg);
   }
@@ -581,20 +585,20 @@ footer ul {
 
  **********************************************************/
 
-#game-index .game-logo {
+#game-index .logo {
   min-height: 370px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#game-index .game-title,
+#game-index .title,
 #game-index .studio-name,
-#game-index .game-description {
+#game-index .description {
   padding: 0 2rem;
 }
 
-#game-index .game-title {
+#game-index .title {
   font-weight: bold;
   margin-bottom: 0;
   padding-top: 0.5em;
@@ -609,11 +613,12 @@ footer ul {
 
 /**********************************************************
 
-  PAGE - SINGLE GAME VIEW
+  PAGE - SINGLE GAME VIEW / SINGLE STUDIO VIEW
 
  **********************************************************/
 
-body.single-game .game-banner {
+body.single-game .banner,
+body.single-studio .banner {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -623,12 +628,30 @@ body.single-game .game-banner {
   margin-top: 68px;
 }
 
-body.single-game .game-basic-info {
+body.single-game .basic-info {
   margin: 8em auto 4em;
 }
 
-body.single-game .game-basic-info h2,
-body.single-game .game-basic-info p {
+body.single-studio .basic-info {
+  margin: 8em auto 1em;
+}
+
+body.single-studio .studio-games a {
+  display: inline-block;
+  width: 20%;
+  margin-right: 1.5em;
+}
+
+body.single-studio .studio-games a p {
+  padding: 0.5em 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+body.single-game .basic-info h2,
+body.single-game .basic-info p,
+body.single-studio .basic-info h2,
+body.single-studio .basic-info p {
   text-align: center;
   margin: 0 auto;
   color: #FFF;
@@ -636,37 +659,50 @@ body.single-game .game-basic-info p {
   font-weight: bold;
 }
 
-body.single-game .game-basic-info h2 {
+body.single-game .basic-info h2,
+body.single-studio .basic-info h2 {
   font-size: 1.3em;
 }
 
-body.single-game .game-basic-info p {
+body.single-game .basic-info p,
+body.single-studio .basic-info p {
   font-size: 0.9em;
 }
 
-body.single-game .game-full-info {
+body.single-game .full-info,
+body.single-studio .full-info {
   background-color: #FFF;
   box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
 }
 
-body.single-game .game-description {
+body.single-game .description,
+body.single-studio .description {
   margin-bottom: 2em;
 }
 
-body.single-game .game-logo {
+body.single-game .logo,
+body.single-studio .logo {
   margin-bottom: 1em;
 }
 
-body.single-game .links {
+body.single-game .arrows,
+body.single-studio .arrows {
+  position: relative;
+}
+
+body.single-game .links,
+body.single-studio .links {
   list-style: none;
   margin: 0;
 }
 
-body.single-game .links li {
+body.single-game .links li,
+body.single-studio .links li {
   margin: 10px 0;
 }
 
-body.single-game .links a {
+body.single-game .links a,
+body.single-studio .links a {
   padding: 10px 0;
   padding-left: 55px;
   background-color: transparent;
@@ -676,40 +712,48 @@ body.single-game .links a {
   min-height: 35px;
 }
 
-body.single-game .links a.demo {
+.links a.demo {
   background-image: url('images/icons/demo.svg');
 }
 
-body.single-game .links a.facebook {
+.links a.facebook {
   background-image: url('images/icons/facebook.svg');
 }
 
-body.single-game .links a.indiegogo {
+.links a.indiegogo {
   background-image: url('images/icons/indiegogo.svg');
 }
 
-body.single-game .links a.kickstarter {
+.links a.kickstarter {
   background-image: url('images/icons/kickstarter.svg');
 }
 
-body.single-game .links a.steam {
+.links a.steam {
   background-image: url('images/icons/steam.svg');
 }
 
-body.single-game .links a.twitch {
+.links a.twitch {
   background-image: url('images/icons/twitch.svg');
 }
 
-body.single-game .links a.twitter {
+.links a.twitter {
   background-image: url('images/icons/twitter.svg');
 }
 
-body.single-game .links a.website {
+.links a.website {
   background-image: url('images/icons/website.svg');
 }
 
-body.single-game .links a.youtube {
+.links a.youtube {
   background-image: url('images/icons/youtube.svg');
+}
+
+.links a.linkedin {
+  background-image: url('images/icons/linkedin.svg');
+}
+
+.links a.instagram {
+  background-image: url('images/icons/instagram.svg');
 }
 
 
@@ -767,26 +811,30 @@ body.single-game .links a.youtube {
     box-shadow: 0px 1px 1px rgba(3, 99, 143, 0.1);
   }
 
-  #game-index .game-logo {
+  #game-index .logo {
     background-position: center;
     background-size: contain;
     margin: 1em auto;
     min-height: 242px;
   }
 
-  body.single-game .game-banner {
+  body.single-game .banner,
+  body.single-studio .banner {
     height: 400px;
   }
 
-  body.single-game .game-basic-info {
+  body.single-game .basic-info,
+  body.single-studio .basic-info {
     height: 50px;
   }
 
-  body.single-game .game-basic-info h2 {
+  body.single-game .basic-info h2,
+  body.single-studio .basic-info h2 {
     font-size: 1.6em;
   }
 
-  body.single-game .game-basic-info p {
+  body.single-game .basic-info p,
+  body.single-studio .basic-info p {
     font-size: 1em;
     font-weight: normal;
   }
@@ -815,30 +863,31 @@ body.single-game .links a.youtube {
     margin: 0 0.5em 0 0;
   }
 
-  #game-index .game-logo {
+  #game-index .logo {
     background-position: center;
     margin: 0;
     background-size: 90%;
   }
 
-  body.single-game .game-banner {
+  body.single-game .banner,
+  body.single-studio .banner {
     height: 500px;
   }
 
-  body.single-game .game-basic-info {
+  body.single-game .basic-info,
+  body.single-studio .basic-info {
     height: 100px;
   }
 
-  body.single-game .game-basic-info h2,
-  body.single-game .game-basic-info p {
+  body.single-game .basic-info h2,
+  body.single-studio .basic-info h2 {
     font-weight: normal;
-  }
-
-  body.single-game .game-basic-info h2 {
     font-size: 2.5em;
   }
 
-  body.single-game .game-basic-info p {
+  body.single-game .basic-info p,
+  body.single-studio .basic-info p {
+    font-weight: normal;
     font-size: 1.1em;
   }
 
@@ -888,15 +937,18 @@ body.single-game .links a.youtube {
     margin: 1em 0 0 0;
   }
 
-  body.single-game .game-basic-info {
+  body.single-game .basic-info,
+  body.single-studio .basic-info {
     height: 130px;
   }
 
-  body.single-game .game-basic-info h2 {
+  body.single-game .basic-info h2,
+  body.single-studio .basic-info h2 {
     font-size: 4em;
   }
 
-  body.single-game .game-basic-info p {
+  body.single-game .basic-info p,
+  body.single-studio .basic-info p {
     font-size: 1.3em;
   }
 
@@ -977,7 +1029,8 @@ body.single-game .links a.youtube {
   /* Parallax additions
   --------------------------------------------- */
 
-  body.single-game header {
+  body.single-game header,
+  body.single-studio header {
     position: fixed;
     z-index: 100;
   }
