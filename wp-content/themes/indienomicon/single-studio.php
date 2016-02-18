@@ -148,12 +148,17 @@ $games = get_posts(array(
                       || get_field('studio_twitch_link')
                       || get_field('studio_linkedin_link')
                       || get_field('studio_instagram_link')
+                      || get_field('studio_contact_email')
                       ): ?>
               <strong>Links:</strong>
               <ul class="links">
 
                 <?php if ($studio_website = get_field('studio_website')): ?>
                 	<li><a href="<?php echo $studio_website['url'] ?>" class="website" target="new">Studio Website</a></li>
+                <?php endif; ?>
+
+                <?php if ($studio_contact_email = get_field('studio_contact_email')): ?>
+                	<li><a href="mailto:<?php echo $studio_contact_email ?>" class="email">Studio Email</a></li>
                 <?php endif; ?>
 
                 <?php if ($studio_facebook_link = get_field('studio_facebook_link')): ?>

@@ -756,6 +756,10 @@ body.single-studio .links a {
   background-image: url('images/icons/instagram.svg');
 }
 
+.links a.email {
+  background-image: url('images/icons/email.svg');
+}
+
 
 
 /**********************************************************
