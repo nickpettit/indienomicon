@@ -649,9 +649,10 @@ body.single-studio .studio-games a p {
 }
 
 body.single-game .basic-info h2,
-body.single-game .basic-info p,
+body.single-game .basic-info a,
 body.single-studio .basic-info h2,
-body.single-studio .basic-info p {
+body.single-studio .basic-info a {
+  display: block;
   text-align: center;
   margin: 0 auto;
   color: #FFF;
@@ -664,8 +665,8 @@ body.single-studio .basic-info h2 {
   font-size: 1.3em;
 }
 
-body.single-game .basic-info p,
-body.single-studio .basic-info p {
+body.single-game .basic-info a,
+body.single-studio .basic-info a {
   font-size: 0.9em;
 }
 
@@ -837,8 +838,8 @@ body.single-studio .links a {
     font-size: 1.6em;
   }
 
-  body.single-game .basic-info p,
-  body.single-studio .basic-info p {
+  body.single-game .basic-info a,
+  body.single-studio .basic-info a {
     font-size: 1em;
     font-weight: normal;
   }
@@ -889,8 +890,8 @@ body.single-studio .links a {
     font-size: 2.5em;
   }
 
-  body.single-game .basic-info p,
-  body.single-studio .basic-info p {
+  body.single-game .basic-info a,
+  body.single-studio .basic-info a {
     font-weight: normal;
     font-size: 1.1em;
   }
@@ -951,8 +952,8 @@ body.single-studio .links a {
     font-size: 4em;
   }
 
-  body.single-game .basic-info p,
-  body.single-studio .basic-info p {
+  body.single-game .basic-info a,
+  body.single-studio .basic-info a {
     font-size: 1.3em;
   }
 

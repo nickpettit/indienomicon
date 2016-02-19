@@ -57,7 +57,7 @@ $studios = get_field('studio');
           <h2><?php the_field('project_title'); ?></h2>
           <?php if ($studios): ?>
             	<?php foreach( $studios as $studio ): ?>
-                  <p class="studio-name"><?php the_field('studio_name', $studio->ID); ?></p>
+                  <a href="<?php echo get_permalink( $studio->ID ); ?>" class="studio-name"><?php the_field('studio_name', $studio->ID); ?></a>
             	<?php endforeach; ?>
           <?php endif; ?>
         </section>
