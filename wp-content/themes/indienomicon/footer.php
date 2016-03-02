@@ -31,7 +31,7 @@
 						<ul>
 							<li><a href="http://www.facebook.com/indienomicon">Facebook</a></li>
 							<li><a href="http://www.twitter.com/indienomicon">Twitter</a></li>
-							<li><a href="https://www.youtube.com/user/IndieNomicon">YouTube</a></li>
+							<li><a href="https://www.instagram.com/indienomicon/">Instagram</a></li>
 							<li><a href="https://www.linkedin.com/company/indienomicon?trk=company_logo">LinkedIn</a></li>
 						</ul>
 					</div>
