@@ -22,7 +22,7 @@ get_header(); ?>
 						<ul class="social">
 							<li class="facebook"><a href="http://www.facebook.com/indienomicon" target="new">Facebook</a></li>
 							<li class="twitter"><a href="http://www.twitter.com/indienomicon" target="new">Twitter</a></li>
-							<li class="youtube"><a href="https://www.youtube.com/user/IndieNomicon" target="new">YouTube</a></li>
+							<li class="instagram"><a href="https://www.instagram.com/indienomicon" target="new">instagram</a></li>
 						</ul>
 					</div>
 
