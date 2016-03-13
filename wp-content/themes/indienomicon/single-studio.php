@@ -144,7 +144,7 @@ $games = get_posts(array(
                   <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
                   <span class="gdc-banner">At GDC 2016</span>
                 </div>
-              <?php else; ?>
+              <?php else: ?>
                 <div class="studio-logo-container">
                   <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
                 </div>
