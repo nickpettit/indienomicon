@@ -138,7 +138,20 @@ $games = get_posts(array(
           <div class="small-12 medium-3 columns sidebar">
 
             <?php if ($studio_logo): ?>
-              <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
+
+              <?php if ($gdc): ?>
+                <div class="studio-logo-container">
+                  <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
+                  <span class="gdc-banner">At GDC 2016</span>
+                </div>
+              <?php else; ?>
+                <div class="studio-logo-container">
+                  <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
+                </div>
+              <?php endif; ?>
+
+
+
             <?php endif; ?>
 
             <?php if (   get_field('studio_website')
