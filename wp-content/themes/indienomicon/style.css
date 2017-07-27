@@ -33,6 +33,11 @@ h2 {
   margin-top: 1em;
 }
 
+h2.tribe-events-page-title {
+    font-size: 1.6em;
+    text-align: inherit;
+}
+
 section.row {
   margin-bottom: 4em;
 }
@@ -139,7 +144,8 @@ iframe {
 /* Medium Screens (Tablets) */
 @media only screen and (min-width: 40.063em) {
 
-  h2 {
+  h2,
+  h2.tribe-events-page-title {
     font-size: 2em;
   }
 
@@ -148,7 +154,8 @@ iframe {
 /* Large Screens (Laptops) */
 @media only screen and (min-width: 64.063em) {
 
-  h2 {
+  h2,
+  h2.tribe-events-page-title {
     font-size: 3em;
   }
 
@@ -260,11 +267,11 @@ header {
 .site-logo {
   color: #000;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.65em;
+  font-size: 0.55em;
   text-transform: uppercase;
   font-weight: bold;
   margin: 5px auto 0px auto;
-  width: 235px;
+  width: 225px;
   -webkit-transition: -webkit-transform 100ms ease-out;
   transition: transform 100ms ease-out;
   display: block;
@@ -301,7 +308,7 @@ nav li {
 }
 
 nav a {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px 0.3em;
@@ -336,7 +343,7 @@ nav a {
 
   .site-logo {
     margin-left: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .site-logo:hover img,
@@ -347,7 +354,7 @@ nav a {
 
   nav a {
     padding: 1em 0.6em;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
 }
@@ -800,7 +807,7 @@ body.single-studio .links a {
 }
 
 .staff h4 {
-  margin: 0;
+  font-size: 1.2em;
 }
 
 .staff p {
@@ -810,6 +817,23 @@ body.single-studio .links a {
 .staff .button {
   width: 50%;
   font-size: 0.8em;
+}
+
+
+/**********************************************************
+
+  PAGE - EVENTS
+
+ **********************************************************/
+
+#tribe-events-content .tribe-events-calendar td {
+  /*background: rgb(24, 154, 153);*/
+  background: #FFF;
+}
+
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+    background: rgb(24, 154, 153);
 }
 
 
