@@ -106,7 +106,8 @@ function indie_register_styles_and_scripts() {
     wp_enqueue_style( 'slick-theme' );
 
 		wp_register_style( 'style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'style' );
+		wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
+
 }
 add_action( 'wp_enqueue_scripts', 'indie_register_styles_and_scripts' );
 
