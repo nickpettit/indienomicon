@@ -40,28 +40,30 @@ get_header(); ?>
 				<p>Indienomicon events feature games created by indie developers local to the Central Florida area. Here are this month's games!</p>
 			</div>
 
-      <?php
+			<div class="item-index">
+	      <?php
 
-        // Create a WordPress query to gather all of the games.
-        $args = array(
-        	'post_type' => 'game',
-					'category_name' => 'featured',
-        	'posts_per_page' => -1, // Unlimited posts
-        	'orderby' => 'project_title', // Order alphabetically by title
-        );
-        $games = new WP_Query( $args );
+	        // Create a WordPress query to gather all of the games.
+	        $args = array(
+	        	'post_type' => 'game',
+						'category_name' => 'featured',
+	        	'posts_per_page' => -1, // Unlimited posts
+	        	'orderby' => 'project_title', // Order alphabetically by title
+	        );
+	        $games = new WP_Query( $args );
 
-        // Render all of the games returned by the query.
-        if( $games->have_posts() ):
-          while ( $games->have_posts() ) : $games->the_post();
-            get_template_part( 'game-listing' );
-          endwhile;
-        endif;
+	        // Render all of the games returned by the query.
+	        if( $games->have_posts() ):
+	          while ( $games->have_posts() ) : $games->the_post();
+	            get_template_part( 'game-listing' );
+	          endwhile;
+	        endif;
 
-        // Restore global post data stomped by the_post().
-        wp_reset_query();
+	        // Restore global post data stomped by the_post().
+	        wp_reset_query();
 
-      ?>
+	      ?>
+			</div>
 
 		</div>
 	</section>

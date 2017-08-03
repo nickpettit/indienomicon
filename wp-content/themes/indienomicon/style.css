@@ -44,7 +44,6 @@ section.row {
 
 a {
   color: rgb(3, 99, 143);
-  outline: none;
 }
 
 a:hover,
@@ -308,7 +307,7 @@ nav li {
 }
 
 nav a {
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px 0.3em;
@@ -593,29 +592,69 @@ footer ul {
 
  **********************************************************/
 
-#game-index .logo {
-  min-height: 370px;
+.item-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 -1%;
+}
+
+.item {
+  text-align: center;
+  font-size: 1em;
+  width: 48%;
+  margin: 0 1% 30px;
+  position: relative;
+}
+
+.item-index .item .background-image-container {
+  display: block;
+  min-height: 200px;
   background-size: contain;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
-#game-index .title,
-#game-index .studio-name,
-#game-index .description {
-  padding: 0 2rem;
+#studio-index .item .background-image-container {
+  text-indent: -9999px;
+}
+
+#game-index .item .game-item {
+  padding: 0;
+}
+
+.game-image {
+  max-height: 200px;
+}
+
+.game-image img {
+  min-width: 100%;
+  border-radius: 4px 4px 0px 0px;
 }
 
 #game-index .title {
+  font-size: 1.3em;
+  color: rgb(24, 154, 153);
   font-weight: bold;
-  margin-bottom: 0;
-  padding-top: 0.5em;
+  margin: 0;
+  padding-top: 12px;
 }
 
 #game-index .studio-name {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.8em;
 }
+
+#game-index .genre {
+  padding: 5px 10px;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.4);
+  font-size: 0.8em;
+}
+
 
 
 
@@ -856,13 +895,6 @@ body.single-studio .links a {
     box-shadow: 0px 1px 1px rgba(3, 99, 143, 0.1);
   }
 
-  #game-index .logo {
-    background-position: center;
-    background-size: contain;
-    margin: 1em auto;
-    min-height: 242px;
-  }
-
   body.single-game .banner,
   body.single-studio .banner {
     height: 400px;
@@ -908,12 +940,6 @@ body.single-studio .links a {
     margin: 0 0.5em 0 0;
   }
 
-  #game-index .logo {
-    background-position: center;
-    margin: 0;
-    background-size: 90%;
-  }
-
   body.single-game .banner,
   body.single-studio .banner {
     height: 500px;
@@ -938,6 +964,10 @@ body.single-studio .links a {
 
   .sidebar {
     border-left: 1px solid rgba(3, 99, 143, 0.1);
+  }
+
+  .item {
+    width: 31.3%;
   }
 
 }
@@ -1006,6 +1036,10 @@ body.single-studio .links a {
     padding: 1.2em 3em;
   }
 
+  .item {
+    width: 23%;
+  }
+
 }
 
 
@@ -1021,8 +1055,8 @@ body.single-studio .links a {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
+    -webkit-perspective: 305px;
+    perspective: 305px;
     -webkit-perspective-origin-x: 100%;
     perspective-origin-x: 100%;
   }

@@ -36,6 +36,7 @@
       </div>
     </div>
 
+    <div class="item-index">
       <?php
 
         // Create a WordPress query to gather all of the games.
@@ -57,8 +58,7 @@
         wp_reset_query();
 
       ?>
-
-      <?php get_template_part('games-archive'); ?>
+    </div>
 
   </div>
 </section>

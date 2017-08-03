@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="game-index" class="row">
+<section id="studio-index" class="row">
   <div class="small-12 columns">
     <h2><?php the_title(); ?></h2>
     <div class="row">
@@ -36,6 +36,7 @@
       </div>
     </div>
 
+    <div class="item-index">
       <?php
 
         // Create a WordPress query to gather all of the games.
@@ -58,6 +59,7 @@
         wp_reset_query();
 
       ?>
+    </div>
 
   </div>
 </section>
