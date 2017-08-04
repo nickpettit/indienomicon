@@ -1,7 +1,12 @@
 <?php
 
 // get the game logo
-$game_logo = get_field('game_logo');
+// first, get the image object returned by ACF
+$image_object = get_field('game_logo');
+// and the image size you want to return
+$image_size = 'medium';
+// now, we'll exctract the image URL from $image_object
+$game_logo = $image_object['sizes'][$image_size];
 
 // gather the studio relationship
 $studios = get_field('studio');
@@ -11,7 +16,7 @@ $studios = get_field('studio');
 <div class="item">
     <div class="content-block game-item">
       <a class="game-image" href="<?php the_permalink(); ?>">
-        <img src="<?php echo $game_logo['url']; ?>">
+        <img src="<?php echo $game_logo; ?>">
       </a>
       <a href="<?php the_permalink(); ?>" ><h3 class="title"><?php the_field('project_title'); ?></h3></a>
       <?php if ($studios): ?>

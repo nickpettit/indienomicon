@@ -90,19 +90,19 @@ add_filter('login_headerurl', 'indie_change_wp_login_url');
  */
 function indie_register_styles_and_scripts() {
 
-		wp_register_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
+		wp_register_style( 'normalize', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/normalize.min.css' );
 		wp_enqueue_style( 'normalize' );
 
 		wp_register_style( 'foudation', get_template_directory_uri() . '/css/foundation.min.css' );
     wp_enqueue_style( 'foudation' );
 
-    wp_register_script( 'slick', get_template_directory_uri() . '/slick/slick.js' );
+    wp_register_script( 'slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick.min.js' );
     wp_enqueue_script( 'slick' );
 
-		wp_register_style( 'slick', get_template_directory_uri() . '/slick/slick.css' );
+		wp_register_style( 'slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick.min.css' );
     wp_enqueue_style( 'slick' );
 
-		wp_register_style( 'slick-theme', get_template_directory_uri() . '/slick/slick-theme.css' );
+		wp_register_style( 'slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick-theme.min.css' );
     wp_enqueue_style( 'slick-theme' );
 
 		wp_register_style( 'style', get_template_directory_uri() . '/style.css' );
