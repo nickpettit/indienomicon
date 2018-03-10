@@ -7,31 +7,25 @@ the_post();
 get_header(); ?>
 
 	<section class="hero">
-		<div class="grid-x grid-margin-x">
-			<div class="small-12 cell">
-
-				<div class="grid-container">
-					<div class="grid-x grid-margin-x">
-						<div class="small-12 medium-5 cell">
-							<div class="card">
-								<div class="card-section next-event">
-									<h2 class="event-title">Our Next Event</h2>
-									<?php the_content(); ?>
-									<a href="https://www.facebook.com/events/1703997619622455/" class="button">Tell us you're coming!</a>
-								</div>
-							</div>
-						</div>
-						<div class="small-12 medium-7 cell">
-							<p class="site-headline">Celebrating the culture and creativity of the independent games created in Central Florida.</p>
-							<ul class="social">
-								<li class="facebook"><a href="http://www.facebook.com/indienomicon" target="new">Facebook</a></li>
-								<li class="twitter"><a href="http://www.twitter.com/indienomicon" target="new">Twitter</a></li>
-								<li class="instagram"><a href="https://www.instagram.com/indienomicon" target="new">instagram</a></li>
-							</ul>
+		<div class="grid-container">
+			<div class="grid-x grid-margin-x">
+				<div class="small-12 small-order-2 medium-order-1 medium-6 large-5 cell">
+					<div class="card  next-event">
+						<h2 class="event-title">Our Next Event</h2>
+						<div class="card-section">
+							<?php the_content(); ?>
+							<a href="https://www.facebook.com/events/1703997619622455/" class="button">Tell us you're coming!</a>
 						</div>
 					</div>
 				</div>
-
+				<div class="small-12 small-order-1 medium-order-2 medium-6 large-7 cell site-headline">
+					<p>Celebrating the culture and creativity of the independent games created in Central Florida.</p>
+					<ul class="social">
+						<li class="facebook"><a href="http://www.facebook.com/indienomicon" target="new">Facebook</a></li>
+						<li class="twitter"><a href="http://www.twitter.com/indienomicon" target="new">Twitter</a></li>
+						<li class="instagram"><a href="https://www.instagram.com/indienomicon" target="new">instagram</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>

@@ -31,34 +31,33 @@
 
 <body <?php body_class(); ?>>
 
-		<header>
-			<div class="grid-container">
-				<div class="grid-x grid-margin-x">
-					<div class="small-12 cell">
-						<div class="top-bar">
-							<div class="top-bar-title">
-								<span data-responsive-toggle="top-level-navigation" data-hide-for="medium">
-									<a class="button responsive-nav-button" data-toggle><i class="fi-list"></i></a>
-								</span>
-								<h1 class="site-logo">
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/indienomicon-logo.svg" alt="Indienomicon Logo">Indienomicon</a>
-								</h1>
-							</div>
-							<div class="top-bar-right">
-								<nav id="top-level-navigation">
-									<?php
-										wp_nav_menu(array(
-						            'container' => false,
-						            'menu' => __( 'Top Bar Menu', 'textdomain' ),
-						            'menu_class' => 'dropdown menu align-center vertical medium-horizontal',
-						            'theme_location' => 'top-level-navigation',
-						            'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
-						        ));
-									?>
-								</nav>
-							</div>
+	<div class="responsive-nav-button-container" data-responsive-toggle="top-level-navigation" data-hide-for="medium">
+		<a class="button responsive-nav-button" data-toggle><i class="fi-list"></i></a>
+	</div>
+
+	<header>
+		<div class="grid-container">
+			<div class="grid-x grid-margin-x">
+				<div class="small-12 cell">
+					<div class="top-bar">
+						<div class="top-bar-title">
+							<h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/indienomicon-logo.svg" alt="Indienomicon Logo">Indienomicon</a></h1>
+						</div>
+						<div class="top-bar-right">
+							<nav id="top-level-navigation">
+								<?php
+									wp_nav_menu(array(
+					            'container' => false,
+					            'menu' => __( 'Top Bar Menu', 'textdomain' ),
+					            'menu_class' => 'dropdown menu align-center vertical medium-horizontal',
+					            'theme_location' => 'top-level-navigation',
+					            'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>'
+					        ));
+								?>
+							</nav>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
