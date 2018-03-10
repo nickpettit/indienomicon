@@ -13,20 +13,22 @@
 
 get_header(); ?>
 
-<section class="row">
-  <div class="small-12 columns">
-    <h2><?php echo get_the_title(); ?></h2>
+<section class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="small-12 cell">
+      <h2><?php echo get_the_title(); ?></h2>
 
-        <?php
-    		// Start the loop.
-    		while ( have_posts() ) : the_post();
+          <?php
+      		// Start the loop.
+      		while ( have_posts() ) : the_post();
 
-          the_content();
+            the_content();
 
-    		// End the loop.
-    		endwhile;
-    		?>
+      		// End the loop.
+      		endwhile;
+      		?>
 
+    </div>
   </div>
 </section>
 

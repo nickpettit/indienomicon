@@ -31,7 +31,7 @@ add_action( 'admin_menu', 'indie_remove_menus' );
  * Register theme menus
  */
 function indie_register_menu() {
-  register_nav_menu('top-level-navigation',__( 'Top Level Navigation' ));
+  register_nav_menu('top-level-navigation',__( 'Top Level Navigation', 'textdomain' ));
 	register_nav_menu('about-sidebar-navigation',__( 'About Sidebar Navigation' ));
 }
 add_action( 'init', 'indie_register_menu' );
@@ -90,11 +90,16 @@ add_filter('login_headerurl', 'indie_change_wp_login_url');
  */
 function indie_register_styles_and_scripts() {
 
-		wp_register_style( 'normalize', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/normalize.min.css' );
-		wp_enqueue_style( 'normalize' );
+		wp_register_script( 'foundation', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js' );
+		wp_enqueue_script( 'foundation' );
 
-		wp_register_style( 'foudation', get_template_directory_uri() . '/css/foundation.min.css' );
+		wp_register_style( 'foudation', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css' );
     wp_enqueue_style( 'foudation' );
+
+		wp_register_style( 'foundation-icons', get_template_directory_uri() . '/css/foundation-icons.css' );
+		wp_enqueue_style( 'foundation-icons', get_stylesheet_directory_uri() . '/css/foundation-icons.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
+
+		/* At some point, Slick should probably be replaced with Foundation's carousel. */
 
     wp_register_script( 'slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick.min.js' );
     wp_enqueue_script( 'slick' );
@@ -104,6 +109,9 @@ function indie_register_styles_and_scripts() {
 
 		wp_register_style( 'slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick-theme.min.css' );
     wp_enqueue_style( 'slick-theme' );
+
+		wp_register_script( 'fitvids', 'https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js' );
+		wp_enqueue_script( 'fitvids' );
 
 		wp_register_style( 'style', get_template_directory_uri() . '/style.css' );
 		wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
