@@ -650,21 +650,21 @@ footer ul {
   margin: 1em -1%;
 }
 
-.game-card {
+.link-card {
   text-align: center;
   font-size: 1em;
   margin: 0 1% 30px;
   transition: all 200ms;
   flex: 0 1 auto;
-  width: 197px;
-  height: 320px;
+  width: 297px;
+  height: 420px;
 }
 
-.game-card .card-section {
+.link-card .card-section {
   background: #FFF;
 }
 
-.game-card .image-container {
+.link-card .image-container {
   height: 100%;
   display: block;
   background-size: contain;
@@ -672,33 +672,31 @@ footer ul {
   background-repeat: no-repeat;
 }
 
-.card-index.large .game-card {
+.card-index.large .link-card {
   width: 297px;
   height: 420px;
 }
 
-.card-index.large .game-card .image-container {
+.card-index.large .link-card .image-container {
   height: 320px;
 }
 
-.game-card:hover {
+.link-card:hover {
   transform: scale(1.02);
   box-shadow: 0px 0px 2px rgba(0,0,0,0.2), 0px 1px 80px rgba(0,0,0,0.8);
 }
 
-.item-index .item .background-image-container {
-  display: block;
-  min-height: 200px;
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat;
+#studio-index .link-card {
+  height: 300px;
+  width: 300px
 }
 
-#studio-index .item .background-image-container {
+#studio-index .card .image-container {
   text-indent: -9999px;
+  background-position: center center;
 }
 
-.game-card .title {
+.link-card .title {
   font-size: 1.1em;
   color: rgb(24, 154, 153);
   font-weight: bold;
@@ -709,14 +707,14 @@ footer ul {
   text-overflow: ellipsis;
 }
 
-.game-card .studio-name {
+.link-card .studio-name {
   font-size: 0.8em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.game-card .genre {
+.link-card .genre {
   padding: 5px;
   margin: 0;
   font-weight: bold;
@@ -1044,8 +1042,14 @@ body.single-studio .links a {
     border-left: 1px solid rgba(3, 99, 143, 0.1);
   }
 
-  .item {
-    width: 31.3%;
+  .link-card {
+    width: 197px;
+    height: 320px;
+  }
+
+  #studio-index .link-card {
+    height: 200px;
+    width: 200px
   }
 
 }

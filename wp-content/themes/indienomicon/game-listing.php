@@ -13,7 +13,7 @@ $studios = get_field('studio');
 
 ?>
 
-<a class="card game-card" href="<?php the_permalink(); ?>">
+<a class="card link-card" href="<?php the_permalink(); ?>">
   <div class="image-container" style="background-image: url('<?php echo $game_logo; ?>')"></div>
   <div class="card-section">
     <h3 class="title truncate"><?php the_field('project_title'); ?></h3>

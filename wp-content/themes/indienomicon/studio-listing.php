@@ -9,5 +9,7 @@ $studio_logo = $image_object['sizes'][$image_size];
 
 ?>
 <?php if ($studio_logo): ?>
-  <div class="content-block item studio"><a class="background-image-container" href="<?php the_permalink(); ?>" style="background-image: url('<?php echo $studio_logo; ?>')"><?php the_field('studio_name'); ?></a></div>
+  <a class="card link-card" href="<?php the_permalink(); ?>">
+    <div class="image-container" style="background-image: url('<?php echo $studio_logo; ?>')"><?php the_field('studio_name'); ?></div>
+  </a>
 <?php endif; ?>
