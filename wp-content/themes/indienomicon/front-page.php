@@ -33,15 +33,15 @@ get_header(); ?>
 
 	<section id="game-index" class="grid-container">
 		<div class="grid-x grid-margin-x">
-			<div class="small-12 cell">
+
+			<div class="small-12 medium-8 large-6 cell">
 				<h2>Featured Games</h2>
-				<div>
-					<p>Indienomicon events feature games created by indie developers local to the Central Florida area. Here are this month's games!</p>
-				</div>
+				<p>Indienomicon events feature games created by indie developers local to the Central Florida area. Here are this month's games!</p>
+			</div>
 
-				<div class="item-index">
+			<div class="small-12 cell">
+				<div class="card-index large">
 		      <?php
-
 		        // Create a WordPress query to gather all of the games.
 		        $args = array(
 		        	'post_type' => 'game',
@@ -60,11 +60,10 @@ get_header(); ?>
 
 		        // Restore global post data stomped by the_post().
 		        wp_reset_query();
-
 		      ?>
 				</div>
-
 			</div>
+
 		</div>
 	</section>
 
