@@ -17,23 +17,25 @@
       </div>
 
 
-      <div class="card">
-        <div class="grid-x grid-margin-x game-submission card-section">
-          <?php if ( is_user_logged_in() ): ?>
-            <div class="small-12 medium-3 cell">
-              <a href="<?php echo admin_url( 'post-new.php?post_type=game' ); ?>" class="button">Submit a Game</a>
-            </div>
-            <div class="small-12 medium-9 cell">
-              <p>Interested in presenting at an Indienomicon event? Submit your game!</p>
-            </div>
-          <?php else: ?>
-            <div class="small-12 medium-3 cell">
-              <a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
-            </div>
-            <div class="small-12 medium-9 cell">
-              <p>Interested in presenting your game at an Indienomicon event? Register your Indienomicon account and then come back to this page to submit your game!</p>
-            </div>
-          <?php endif; ?>
+      <div class="callout primary">
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <?php if ( is_user_logged_in() ): ?>
+              <div class="small-12 medium-3 cell">
+                <a href="<?php echo admin_url( 'post-new.php?post_type=game' ); ?>" class="button">Submit a Game</a>
+              </div>
+              <div class="small-12 medium-9 cell">
+                <p>Interested in presenting at an Indienomicon event? Submit your game!</p>
+              </div>
+            <?php else: ?>
+              <div class="small-12 medium-3 cell">
+                <a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
+              </div>
+              <div class="small-12 medium-9 cell">
+                <p>Interested in presenting your game at an Indienomicon event? Register your Indienomicon account and then come back to this page to submit your game!</p>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
       </div>
 

@@ -207,6 +207,7 @@ a.button {
   border: none;
   box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
   transition: all 80ms ease-out;
+  margin: 0;
 }
 
 .button:hover,
@@ -223,7 +224,6 @@ a.button:focus  {
   .button,
   a.button {
     font-size: 1.1rem;
-    padding: 0.5em 1.2em;
   }
 
 }
@@ -238,7 +238,7 @@ a.button:focus  {
 .card {
   border-radius: 7px;
   border: none;
-  box-shadow: 0px 0px 2px rgba(0,0,0,0.2), 0px 1px 40px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.2), 0px 1px 30px rgba(0,0,0,0.1);
 }
 
 
@@ -268,7 +268,7 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   position: fixed;
-  bottom: 140px;
+  bottom: 100px;
   right: 30px;
   background: #FFF;
   width: 50%;
@@ -645,7 +645,7 @@ footer ul {
 .card-index {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 1em -1%;
 }
@@ -656,20 +656,26 @@ footer ul {
   margin: 0 1% 30px;
   transition: all 200ms;
   flex: 0 1 auto;
-  width: 297px;
-  height: 420px;
+  width: 48%;
 }
 
 .link-card .card-section {
+  padding: 0.15em;
+  height: 80px;
   background: #FFF;
+  position: relative;
 }
 
 .link-card .image-container {
-  height: 100%;
   display: block;
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
+  height: 180px;
+}
+
+.link-card .image-container img {
+  width: 100%;
 }
 
 .card-index.large .link-card {
@@ -679,6 +685,7 @@ footer ul {
 
 .card-index.large .link-card .image-container {
   height: 320px;
+  background: #FFF;
 }
 
 .link-card:hover {
@@ -701,7 +708,6 @@ footer ul {
   color: rgb(24, 154, 153);
   font-weight: bold;
   margin: 0;
-  padding-top: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -715,13 +721,17 @@ footer ul {
 }
 
 .link-card .genre {
-  padding: 5px;
   margin: 0;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.3);
   font-size: 0.8em;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: block;
+  padding: 0.2em;
 }
 
 
@@ -985,6 +995,14 @@ body.single-studio .links a {
     font-weight: normal;
   }
 
+  .link-card {
+    width: 31.33333%;
+  }
+
+  .link-card .image-container {
+    height: 180px;
+  }
+
 
 }
 
@@ -1043,13 +1061,25 @@ body.single-studio .links a {
   }
 
   .link-card {
-    width: 197px;
-    height: 320px;
+    width: 23%;
+  }
+
+  .link-card .image-container {
+    height: 180px;
   }
 
   #studio-index .link-card {
     height: 200px;
     width: 200px
+  }
+
+}
+
+/* Small Screens (Netbooks) */
+@media only screen and (min-width: 54em) {
+
+  .link-card .image-container {
+    height: 220px;
   }
 
 }
@@ -1122,8 +1152,12 @@ body.single-studio .links a {
     padding: 0.9em 2em;
   }
 
-  .item {
-    width: 23%;
+  .link-card {
+    width: 18%;
+  }
+
+  .link-card .image-container {
+    height: 220px;
   }
 
 }
