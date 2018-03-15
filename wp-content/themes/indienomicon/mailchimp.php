@@ -1,4 +1,4 @@
-<section class="section-callout">
+<section class="callout primary">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="small-12 cell">

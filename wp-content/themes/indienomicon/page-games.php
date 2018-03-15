@@ -5,7 +5,7 @@
     <div class="small-12 cell">
       <h2><?php the_title(); ?></h2>
       <div class="grid-x grid-margin-x">
-        <div class="small-12 cell">
+        <div class="small-12 large-7 cell">
           <?php
 
             // Display basic page content
@@ -14,27 +14,26 @@
 
       		?>
         </div>
-      </div>
-
-
-      <div class="callout primary">
-        <div class="grid-container">
-          <div class="grid-x grid-margin-x">
-            <?php if ( is_user_logged_in() ): ?>
-              <div class="small-12 medium-3 cell">
-                <a href="<?php echo admin_url( 'post-new.php?post_type=game' ); ?>" class="button">Submit a Game</a>
+        <div class="small-12 large-5 cell">
+          <div class="callout primary cta">
+            <div class="grid-container">
+              <div class="grid-x grid-margin-x">
+                <div class="small-12 medium-4 large-12 cell">
+                  <?php if ( is_user_logged_in() ): ?>
+                    <a href="<?php echo admin_url( 'post-new.php?post_type=game' ); ?>" class="button">Submit a Game</a>
+                  <?php else: ?>
+                    <a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
+                  <?php endif; ?>
+                </div>
+                <div class="small-12 medium-8 large-12 cell">
+                  <?php if ( is_user_logged_in() ): ?>
+                    <p>Interested in presenting at an Indienomicon event? Submit your game!</p>
+                  <?php else: ?>
+                    <p>Interested in presenting your game at an Indienomicon event? Register your Indienomicon account and then come back to this page to submit your game!</p>
+                  <?php endif; ?>
+                </div>
               </div>
-              <div class="small-12 medium-9 cell">
-                <p>Interested in presenting at an Indienomicon event? Submit your game!</p>
-              </div>
-            <?php else: ?>
-              <div class="small-12 medium-3 cell">
-                <a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
-              </div>
-              <div class="small-12 medium-9 cell">
-                <p>Interested in presenting your game at an Indienomicon event? Register your Indienomicon account and then come back to this page to submit your game!</p>
-              </div>
-            <?php endif; ?>
+            </div>
           </div>
         </div>
       </div>

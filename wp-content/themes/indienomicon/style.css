@@ -231,14 +231,54 @@ a.button:focus  {
 
 /**********************************************************
 
-  CARDS
+  CARDS & CALLOUTS
 
  **********************************************************/
 
 .card {
-  border-radius: 7px;
+  border-radius: 5px;
   border: none;
-  box-shadow: 0px 0px 2px rgba(0,0,0,0.2), 0px 1px 30px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.2), 0px 1px 20px rgba(0,0,0,0.1);
+}
+
+.callout.primary {
+  background: rgb(24, 154, 153);
+  color: #FFF;
+  border: none;
+}
+
+.callout.cta {
+  border-radius: 5px;
+}
+
+.callout.cta p {
+  margin: 0.5em 0 0 0;
+  font-size: 0.8em;
+  color: rgba(255,255,255,0.8);
+  font-style: italic;
+  text-align: center;
+}
+
+.callout.primary h2,
+.callout.primary h3 {
+  color: #FFF;
+}
+
+.callout.primary .button {
+  color: #FFF;
+  background-color: rgb(3, 99, 143);
+  text-decoration: none;
+}
+
+.callout.primary .button:hover,
+.callout.primary .button:focus {
+  background-color: rgb(23, 119, 163);
+}
+
+.callout.primary a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 
@@ -302,7 +342,7 @@ header {
   width: 1.5em;
   height: 1.5em;
   margin-right: 20px;
-  box-shadow: 0px 0px 1px rgba(0,0,0,0.4), 0px 4px 25px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.6), 0px 4px 25px rgba(0,0,0,1);
 }
 
 .top-bar-title {
@@ -608,32 +648,6 @@ footer ul {
   margin: 0;
 }
 
-.section-callout {
-  background: rgb(24, 154, 153);
-  color: #FFF;
-}
-
-.section-callout h2,
-.section-callout h3 {
-  color: #FFF;
-}
-
-.section-callout .button {
-  color: #FFF;
-  background-color: rgb(3, 99, 143);
-}
-
-.section-callout .button:hover,
-.section-callout .button:focus {
-  background-color: rgb(23, 119, 163);
-}
-
-.section-callout a {
-  color: #FFF;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 
 
 /**********************************************************
@@ -655,8 +669,7 @@ footer ul {
   font-size: 1em;
   margin: 0 1% 30px;
   transition: all 200ms;
-  flex: 0 1 auto;
-  width: 48%;
+  flex: 0 1 48%;
 }
 
 .link-card .card-section {
@@ -678,14 +691,16 @@ footer ul {
   width: 100%;
 }
 
-.card-index.large .link-card {
-  width: 297px;
-  height: 420px;
+.card-index.large {
+  justify-content: space-around;
 }
 
-.card-index.large .link-card .image-container {
-  height: 320px;
-  background: #FFF;
+.card-index.large .card {
+    flex: 0 3 auto;
+}
+
+.card-index.large .card .image-container {
+    height: auto;
 }
 
 .link-card:hover {
@@ -693,9 +708,14 @@ footer ul {
   box-shadow: 0px 0px 2px rgba(0,0,0,0.2), 0px 1px 80px rgba(0,0,0,0.8);
 }
 
+#studio-index .card-index {
+  justify-content: space-evenly;
+}
+
 #studio-index .link-card {
-  height: 300px;
-  width: 300px
+  width: 30vw;
+  height: 30vw;
+  flex: 0 1 auto;
 }
 
 #studio-index .card .image-container {
@@ -966,14 +986,6 @@ body.single-studio .links a {
 
 @media only screen and (min-width: 30em) {
 
-  /* .content-block,
-  .grid-x.collapse.content-block,
-  .content-block-padded,
-  .grid-x.collapse.content-block-padded {
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(3, 99, 143, 0.1);
-  } */
-
   body.single-game .banner,
   body.single-studio .banner {
     height: 400px;
@@ -996,7 +1008,12 @@ body.single-studio .links a {
   }
 
   .link-card {
-    width: 31.33333%;
+    flex-basis: 31.33333%;
+  }
+
+  #studio-index .link-card {
+    width: 20vw;
+    height: 20vw;
   }
 
   .link-card .image-container {
@@ -1028,7 +1045,7 @@ body.single-studio .links a {
     margin: 0 1em 0 0;
   }
 
-  .section-callout input {
+  .callout.primary input {
     width: auto;
     margin: 0 0.5em 0 0;
     display: inline;
@@ -1061,21 +1078,17 @@ body.single-studio .links a {
   }
 
   .link-card {
-    width: 23%;
-  }
-
-  .link-card .image-container {
-    height: 180px;
+    flex-basis: 23%;
   }
 
   #studio-index .link-card {
-    height: 200px;
-    width: 200px
+    width: 15vw;
+    height: 15vw;
   }
 
 }
 
-/* Small Screens (Netbooks) */
+/* Large Screens (Laptops) */
 @media only screen and (min-width: 54em) {
 
   .link-card .image-container {
@@ -1084,7 +1097,7 @@ body.single-studio .links a {
 
 }
 
-/* Large Screens (Laptops) */
+/* Extra Large Screens (Desktops) */
 @media only screen and (min-width: 64em) {
 
   .hero {
@@ -1143,21 +1156,22 @@ body.single-studio .links a {
     font-size: 1.3em;
   }
 
-  .section-callout input {
+  .callout.primary input {
     padding: 1.2em;
     font-size: 1.2em;
   }
 
-  .section-callout .button {
+  .callout.primary .button {
     padding: 0.9em 2em;
   }
 
   .link-card {
-    width: 18%;
+    flex-basis: 18%;
   }
 
-  .link-card .image-container {
-    height: 220px;
+  #studio-index .link-card {
+    width: 12vw;
+    height: 12vw;
   }
 
 }
