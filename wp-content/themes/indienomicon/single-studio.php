@@ -67,143 +67,158 @@ $games = get_posts(array(
         </section>
 
         <?php if (current_user_can('edit_post', get_the_ID())): ?>
-          <div class="row content-block">
-            <div class="small-4 columns">
-              <a href="<?php echo get_edit_post_link(); ?>" class="button">Edit this Studio</a>
-            </div>
-            <div class="small-8 columns">
-              <p>You're able to edit this studio! That usually means you're the person that created it. To see this page <em>without</em> this button, view the page while logged out.</p>
+          <div class="grid-container">
+            <div class="callout primary cta">
+              <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                  <div class="small-12 medium-4 cell">
+                    <a href="<?php echo get_edit_post_link(); ?>" class="button">Edit this Studio</a>
+                  </div>
+                  <div class="small-12 medium-8 cell">
+                    <p>You're able to edit this studio! That usually means you're the person that created it. To see this page <em>without</em> this button, view the page while logged out.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         <?php endif; ?>
 
-        <section class="row full-info content-block">
 
-          <div class="small-12 medium-9 columns">
+        <section class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="small-12 cell">
+              <div class="full-info">
+                <div class="grid-container">
+                  <div class="grid-x grid-margin-x">
 
-            <?php if (   $studio_images[0]
-                      || $studio_images[1]
-                      || $studio_images[2]
-                      || get_field('studio_showreel')
-                      ): ?>
-              <ul class="screenshot-slider">
+                    <div class="small-12 medium-9 cell">
 
-                <?php if (get_field('studio_showreel')): ?>
-                  <?php
-                      // extract the YouTube ID from the full URL
-                      $url = get_field('studio_showreel');
-                      preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $url, $matches);
-                      $id = $matches[1];
-                  ?>
-                  <li class="fitvid"><iframe width="640" height="360" src="https://www.youtube.com/embed/<?php echo $id; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
-                <?php endif; ?>
+                      <?php if (   $studio_images[0]
+                                || $studio_images[1]
+                                || $studio_images[2]
+                                || get_field('studio_showreel')
+                                ): ?>
+                        <ul class="screenshot-slider">
 
-                <?php foreach ($studio_images as $image): ?>
-                  <?php if ($image): ?>
-                    <li>
-                      <a href="<?php echo $image['url']; ?>" target="new"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" /></a>
-                    </li>
-                  <?php endif; ?>
-                <?php endforeach; ?>
+                          <?php if (get_field('studio_showreel')): ?>
+                            <?php
+                                // extract the YouTube ID from the full URL
+                                $url = get_field('studio_showreel');
+                                preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $url, $matches);
+                                $id = $matches[1];
+                            ?>
+                            <li class="fitvid"><iframe width="640" height="360" src="https://www.youtube.com/embed/<?php echo $id; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></li>
+                          <?php endif; ?>
 
-              </ul>
-              <div class="arrows"></div>
-            <?php endif; ?>
+                          <?php foreach ($studio_images as $image): ?>
+                            <?php if ($image): ?>
+                              <li>
+                                <a href="<?php echo $image['url']; ?>" target="new"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" /></a>
+                              </li>
+                            <?php endif; ?>
+                          <?php endforeach; ?>
 
-            <?php if (get_field('studio_description')): ?>
-              <div class="studio-description">
-                <h3>About</h3>
-                <p><?php the_field('studio_description'); ?></p>
-              </div>
-            <?php endif; ?>
+                        </ul>
+                        <div class="arrows"></div>
+                      <?php endif; ?>
 
-						<?php if( $games ): ?>
-              <div class="studio-games">
-                <h3>Games</h3>
+                      <?php if (get_field('studio_description')): ?>
+                        <div class="studio-description">
+                          <h3>About</h3>
+                          <p><?php the_field('studio_description'); ?></p>
+                        </div>
+                      <?php endif; ?>
 
-  							<?php foreach( $games as $game ): ?>
-  								<?php $game_logo = get_field('game_logo', $game->ID); ?>
-  									<a href="<?php echo get_permalink( $game->ID ); ?>">
-  										<img src="<?php echo $game_logo['url']; ?>" alt="<?php get_field('project_title', $game->ID);?>" />
-  										<p><?php echo get_the_title( $game->ID ); ?></p>
-  									</a>
-  							<?php endforeach; ?>
+          						<?php if( $games ): ?>
+                        <div class="studio-games">
+                          <h3>Games</h3>
 
-              </div>
-						<?php endif; ?>
+            							<?php foreach( $games as $game ): ?>
+            								<?php $game_logo = get_field('game_logo', $game->ID); ?>
+            									<a href="<?php echo get_permalink( $game->ID ); ?>">
+            										<img src="<?php echo $game_logo['url']; ?>" alt="<?php get_field('project_title', $game->ID);?>" />
+            										<p><?php echo get_the_title( $game->ID ); ?></p>
+            									</a>
+            							<?php endforeach; ?>
 
-          </div>
+                        </div>
+          						<?php endif; ?>
+
+                    </div>
 
 
-          <div class="small-12 medium-3 columns sidebar">
+                    <div class="small-12 medium-3 cell sidebar">
 
-            <?php if ($studio_logo): ?>
+                      <?php if ($studio_logo): ?>
 
-              <?php if (get_field('gdc')): ?>
-                <div class="studio-logo-container">
-                  <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
-                  <span class="gdc-banner">At GDC 2016</span>
+                        <?php if (get_field('gdc')): ?>
+                          <div class="studio-logo-container">
+                            <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
+                            <span class="gdc-banner">At GDC 2016</span>
+                          </div>
+                        <?php else: ?>
+                          <div class="studio-logo-container">
+                            <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
+                          </div>
+                        <?php endif; ?>
+
+
+
+                      <?php endif; ?>
+
+                      <?php if (   get_field('studio_website')
+                                || get_field('studio_facebook_link')
+                                || get_field('studio_twitter_link')
+                                || get_field('studio_youtube_link')
+                                || get_field('studio_twitch_link')
+                                || get_field('studio_linkedin_link')
+                                || get_field('studio_instagram_link')
+                                || get_field('studio_contact_email')
+                                ): ?>
+                        <strong>Links:</strong>
+                        <ul class="links">
+
+                          <?php if ($studio_website = get_field('studio_website')): ?>
+                          	<li><a href="<?php echo $studio_website['url'] ?>" class="website" target="new">Studio Website</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_contact_email = get_field('studio_contact_email')): ?>
+                          	<li><a href="mailto:<?php echo $studio_contact_email ?>" class="email">Studio Email</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_facebook_link = get_field('studio_facebook_link')): ?>
+                          	<li><a href="<?php echo $studio_facebook_link['url'] ?>" class="facebook" target="new">Facebook</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_twitter_link = get_field('studio_twitter_link')): ?>
+                          	<li><a href="<?php echo $studio_twitter_link['url'] ?>" class="twitter" target="new">Twitter</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_youtube_link = get_field('studio_youtube_link')): ?>
+                          	<li><a href="<?php echo $studio_youtube_link['url'] ?>" class="youtube" target="new">YouTube</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_twitch_link = get_field('studio_twitch_link')): ?>
+                          	<li><a href="<?php echo $studio_twitch_link['url'] ?>" class="twitch" target="new">Twitch</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_linkedin_link = get_field('studio_linkedin_link')): ?>
+                          	<li><a href="<?php echo $studio_linkedin_link['url'] ?>" class="linkedin" target="new">LinkedIn</a></li>
+                          <?php endif; ?>
+
+                          <?php if ($studio_instagram_link = get_field('studio_instagram_link')): ?>
+                          	<li><a href="<?php echo $studio_instagram_link['url'] ?>" class="instagram" target="new">Instagram</a></li>
+                          <?php endif; ?>
+
+                      	</ul>
+                      <?php endif; ?>
+
+                    </div>
+                  </div>
                 </div>
-              <?php else: ?>
-                <div class="studio-logo-container">
-                  <img src="<?php echo $studio_logo['url']; ?>" alt="<?php the_field('studio_name'); ?>" class="logo" />
-                </div>
-              <?php endif; ?>
-
-
-
-            <?php endif; ?>
-
-            <?php if (   get_field('studio_website')
-                      || get_field('studio_facebook_link')
-                      || get_field('studio_twitter_link')
-                      || get_field('studio_youtube_link')
-                      || get_field('studio_twitch_link')
-                      || get_field('studio_linkedin_link')
-                      || get_field('studio_instagram_link')
-                      || get_field('studio_contact_email')
-                      ): ?>
-              <strong>Links:</strong>
-              <ul class="links">
-
-                <?php if ($studio_website = get_field('studio_website')): ?>
-                	<li><a href="<?php echo $studio_website['url'] ?>" class="website" target="new">Studio Website</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_contact_email = get_field('studio_contact_email')): ?>
-                	<li><a href="mailto:<?php echo $studio_contact_email ?>" class="email">Studio Email</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_facebook_link = get_field('studio_facebook_link')): ?>
-                	<li><a href="<?php echo $studio_facebook_link['url'] ?>" class="facebook" target="new">Facebook</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_twitter_link = get_field('studio_twitter_link')): ?>
-                	<li><a href="<?php echo $studio_twitter_link['url'] ?>" class="twitter" target="new">Twitter</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_youtube_link = get_field('studio_youtube_link')): ?>
-                	<li><a href="<?php echo $studio_youtube_link['url'] ?>" class="youtube" target="new">YouTube</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_twitch_link = get_field('studio_twitch_link')): ?>
-                	<li><a href="<?php echo $studio_twitch_link['url'] ?>" class="twitch" target="new">Twitch</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_linkedin_link = get_field('studio_linkedin_link')): ?>
-                	<li><a href="<?php echo $studio_linkedin_link['url'] ?>" class="linkedin" target="new">LinkedIn</a></li>
-                <?php endif; ?>
-
-                <?php if ($studio_instagram_link = get_field('studio_instagram_link')): ?>
-                	<li><a href="<?php echo $studio_instagram_link['url'] ?>" class="instagram" target="new">Instagram</a></li>
-                <?php endif; ?>
-
-            	</ul>
-            <?php endif; ?>
-
+              </div>
+            </div>
           </div>
-
-
         </section>
 
 <?php endwhile; // end of the loop. ?>
