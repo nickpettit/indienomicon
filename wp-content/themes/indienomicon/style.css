@@ -960,7 +960,7 @@ body.single-studio .links a {
 
 .staff img {
   border-radius: 100%;
-  width: 100%;
+  width: 50%;
 }
 
 .staff h4 {
@@ -1198,8 +1198,8 @@ body.single-studio .links a {
   }
 
   #studio-index .link-card {
-    width: 12vw;
-    height: 12vw;
+    width: 200px;
+    height: 200px;
   }
 
   .staff li {
