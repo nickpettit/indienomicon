@@ -22,25 +22,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php do_action( 'tribe_events_after_the_title' ) ?>
 
 	<!-- Event Submission -->
-	<div class="content-block-padded">
-		<div class="row game-submission">
-			<?php if ( is_user_logged_in() ): ?>
-				<div class="small-12 medium-4 columns">
-					<a href="<?php echo admin_url( 'post-new.php?post_type=tribe_events' ); ?>" class="button">Submit an Event</a>
-				</div>
-				<div class="small-12 medium-8 columns">
-					<p>Don't see your favorite event listed here? Submit an event!</p>
-				</div>
-			<?php else: ?>
-				<div class="small-12 medium-4 columns">
-					<a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
-				</div>
-				<div class="small-12 medium-8 columns">
-					<p>Don't see your favorite event listed here? Register your Indienomicon account and then come back to this page to submit your event!</p>
-				</div>
-			<?php endif; ?>
-		</div>
-	</div>
+  <div class="small-12 large-5 cell">
+    <div class="callout primary cta">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="small-12 medium-3 cell">
+            <?php if ( is_user_logged_in() ): ?>
+              <a href="<?php echo admin_url( 'post-new.php?post_type=tribe_events' ); ?>" class="button">Submit an Event</a>
+            <?php else: ?>
+              <a href="<?php echo wp_registration_url(); ?>" class="button">Register</a>
+            <?php endif; ?>
+          </div>
+          <div class="small-12 medium-9 cell">
+            <?php if ( is_user_logged_in() ): ?>
+              <p>Don't see your favorite event listed here? Submit an event!</p>
+            <?php else: ?>
+              <p>Don't see your favorite event listed here? Register your Indienomicon account and then come back to this page to submit your event!</p>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 	<!-- Notices -->
 	<?php tribe_the_notices() ?>
